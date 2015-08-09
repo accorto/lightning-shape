@@ -1,0 +1,96 @@
+/*
+Error: Invalid CSS after "...ce Sans', Arial": expected ":", was ", sans-serif,"
+        on line 388 of salesforce-design-system/scss/design-tokens.scss
+        from line 2 of styles.scss
+
+383:   "color-background-modal-button-active": rgba(0, 0, 0, 0.16),
+384:   "color-border-button-brand": rgb(0, 112, 210),
+385:   "color-border-button-brand-disabled": rgba(0, 0, 0, 0),
+386:   "color-border-button-default": rgb(216, 221, 230),
+387:   "color-border-button-inverse-disabled": rgba(255, 255, 255, 0.15),
+388:   "font-family": 'Salesforce Sans', Arial, sans-serif,
+389:   "font-family-body": 'SalesforceSans-Regular', Arial, sans-serif,
+390:   "font-family-light": 'SalesforceSans-Light', Arial, sans-serif,
+391:   "font-family-strong": 'SalesforceSans-Bold', Arial, sans-serif,
+392:   "font-weight-light": 300,
+393:   "font-weight-regular": 400,
+
+Backtrace:
+salesforce-design-system/scss/design-tokens.scss:388
+styles.scss:2
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/lexer.rb:221:in `expected!'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:580:in `assert_tok'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:287:in `map_pair'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:278:in `map'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:513:in `paren'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:498:in `special_fun'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:492:in `raw'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:406:in `funcall'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:387:in `ident'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:246:in `unary_not'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:246:in `unary_div'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:246:in `unary_minus'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:246:in `unary_plus'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:227:in `times_div_or_mod'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:227:in `plus_or_minus'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:227:in `relational'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:227:in `eq_or_neq'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:227:in `and_expr'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:227:in `or_expr'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:361:in `space'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:345:in `interpolation'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:293:in `expr'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:571:in `assert_expr'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/parser.rb:62:in `parse'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1024:in `sass_script'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:604:in `variable'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:657:in `block_child'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:117:in `stylesheet'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:42:in `parse'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:403:in `_to_tree'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:309:in `to_tree'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:88:in `with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:364:in `watch_or_update'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ce Sans', Arial\": expected \":\", was \", sans-serif,\"\A         on line 388 of salesforce-design-system/scss/design-tokens.scss\A         from line 2 of styles.scss\A \A 383:   \"color-background-modal-button-active\": rgba(0, 0, 0, 0.16),\A 384:   \"color-border-button-brand\": rgb(0, 112, 210),\A 385:   \"color-border-button-brand-disabled\": rgba(0, 0, 0, 0),\A 386:   \"color-border-button-default\": rgb(216, 221, 230),\A 387:   \"color-border-button-inverse-disabled\": rgba(255, 255, 255, 0.15),\A 388:   \"font-family\": 'Salesforce Sans', Arial, sans-serif,\A 389:   \"font-family-body\": 'SalesforceSans-Regular', Arial, sans-serif,\A 390:   \"font-family-light\": 'SalesforceSans-Light', Arial, sans-serif,\A 391:   \"font-family-strong\": 'SalesforceSans-Bold', Arial, sans-serif,\A 392:   \"font-weight-light\": 300,\A 393:   \"font-weight-regular\": 400,"; }
