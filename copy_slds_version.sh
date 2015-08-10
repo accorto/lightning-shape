@@ -27,5 +27,7 @@ rm utility-sprite/symbols.html
 rm README
 cd -
 
+# copy Logo
+cp LightningDartLogo.svg www/assets/images
 
 

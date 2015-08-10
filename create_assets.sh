@@ -5,8 +5,9 @@ set -x
 # recreate assets
 gulp sass
 
-TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart/lib
+TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart
 
-rm -R ${TARGET}/assets
-cp -R www/assets ${TARGET}
+rm -R ${TARGET}/lib/assets
+cp -R www/assets ${TARGET}/lib
 
+cp LightningDartLogo.svg ${TARGET}
