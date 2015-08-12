@@ -4,7 +4,7 @@ set -x
 
 # copy current version of slds
 
-SLDS=slds/salesforce-lightning-design-system-v0.5.1
+SLDS=slds/salesforce-lightning-design-system-v0.5.2
 
 ## Copy to target
 

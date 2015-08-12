@@ -1,14 +1,14 @@
-/* Lightning Design System v0.5.1 */
-/*
-Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+/* Lightning Design System v0.5.2 */
+// Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+// Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+// Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+// Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
+
 
 // Grid
 $grid: (
@@ -28,7 +28,9 @@ $grid: (
     "breakpoint": $mq-large,
     "columns": 12
   )
-);
+) !default;
+
+
 
 // Screen Only
 @mixin mq-screen {
@@ -37,6 +39,8 @@ $grid: (
     @content;
   }
 }
+
+
 
 // TINY - 320px - 20rem
 @mixin mq-tiny-min {
@@ -53,6 +57,8 @@ $grid: (
   }
 }
 
+
+
 // SMALL - 480px - 30rem
 @mixin mq-small-min {
 
@@ -67,6 +73,8 @@ $grid: (
     @content;
   }
 }
+
+
 
 // MEDIUM - 768px - 48rem
 @mixin mq-medium-min {
@@ -83,6 +91,8 @@ $grid: (
   }
 }
 
+
+
 // LARGE - 1024px - 64rem
 @mixin mq-large-min {
 
@@ -97,6 +107,8 @@ $grid: (
     @content;
   }
 }
+
+
 
 //HUGE - 1224px - 76.5rem
 @mixin mq-huge-min {
@@ -113,6 +125,8 @@ $grid: (
   }
 }
 
+
+
 // SUPER - 1824px - 114rem
 @mixin mq-super-min {
 
@@ -128,17 +142,21 @@ $grid: (
   }
 }
 
+
+
 // RETINA
 @mixin retina {
 
   @media only screen and (min--moz-device-pixel-ratio: 1.3),
-                            (-o-min-device-pixel-ratio: 2.6/2),
-                            (-webkit-min-device-pixel-ratio: 1.3),
-                            (min-device-pixel-ratio: 1.3),
-                            (min-resolution: 1.3dppx) {
+                         (-o-min-device-pixel-ratio: 2.6/2),
+                         (-webkit-min-device-pixel-ratio: 1.3),
+                         (min-device-pixel-ratio: 1.3),
+                         (min-resolution: 1.3dppx) {
     @content;
   }
 }
+
+
 
 // WEBKIT
 @mixin webkit {
@@ -148,49 +166,68 @@ $grid: (
   }
 }
 
+
+
 // Sizing Helper
 @mixin width($columns, $breakpoint: null) {
   $breakpoint-string: null;
+
   // Loop through the number of columns for each denominator of our fractions.
   @each $denominator in $columns {
+
     @if ($breakpoint != null) {
       $breakpoint-string: $breakpoint + '-';
     }
+
     // If we’re trying to make wholes, just spit a 100% width utility out one time only.
     @if ($denominator == 1) {
+
       .#{$css-prefix}#{$breakpoint-string}size--1-of-#{$denominator} {
         width: 100%;
       }
-    } @else {
+    }
+
+    @else {
+
       // Begin creating a numberator for our fraction up until we hit the denominator.
       @for $numerator from 1 through $denominator {
+
         // Build a class in the format `.slds-size--3-of-4`.
         .#{$css-prefix}#{$breakpoint-string}size--#{$numerator}-of-#{$denominator} {
-            width: ($numerator / $denominator) * 100%;
+          width: ($numerator / $denominator) * 100%;
         }
       }
     }
   }
 }
 
+
+
 // Order Helper
 @mixin order($regions, $breakpoint: null) {
+
   @each $denominator in $regions {
+
     @for $numerator from 1 to $denominator {
+
       // Build a class in the format `.slds-order--1`.
       .#{$css-prefix}#{$breakpoint}order--#{$numerator} {
-          order: $numerator;
+        order: $numerator;
       }
     }
   }
 }
 
+
+
 // Sizing Helper
 @mixin flex-size($span: 1,$spread: 12) {
+
   @if type-of($span) == number and unitless($span) == false {
     flex: 0 0 rem($span);
     max-width: rem($span)
   }
+
   @else {
     $pct: percentage($span / $spread);
     flex: 0 0 $pct;
@@ -198,31 +235,42 @@ $grid: (
   }
 }
 
+
+
 // Wrapping Helper
 @mixin flex-wrap($wrap: true) {
+
   @if $wrap {
     flex-wrap: wrap;
     align-items: flex-start;
   }
+
   @else {
     flex-wrap: nowrap;
     align-items: stretch;
   }
 }
 
+
+
 // Children - Flexbox Item
 @mixin flex-item($size: expand) {
+
   @if (type-of($size) == 'number') {
     @include flex-size($size,$columns);
   }
+
   @if ($size == shrink) {
     flex: 0 0 auto;
     overflow: visible;
   }
+
   @else if ($size == expand) {
     flex: 1 1 auto;
   }
 }
+
+
 
 // Parent - Flexbox Container
 // @TODO - this will become deprecated
@@ -240,6 +288,8 @@ $grid: (
     list-style: none;
 }
 
+
+
 // Truncate
 @mixin truncate {
   max-width: 100%;
@@ -248,8 +298,11 @@ $grid: (
   white-space: nowrap;
 }
 
+
+
 // Clearfix
 @mixin clearfix {
+
   &:after {
     content: '';
     display: table;
@@ -257,9 +310,10 @@ $grid: (
   }
 }
 
+
+
 // Spacing
 @mixin spacing($property) {
-
   $prop-prefix: null;
   $positions: top right bottom left;
 
@@ -299,4 +353,11 @@ $grid: (
       }
     }
   }
+}
+
+
+
+@mixin square($size) {
+   width: $size;
+  height: $size;
 }

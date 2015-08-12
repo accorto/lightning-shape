@@ -1,4 +1,4 @@
-/* Lightning Design System v0.5.1 */
+/* Lightning Design System v0.5.2 */
 /*
 Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
@@ -12,33 +12,18 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 .#{$css-prefix}picklist {
   position: relative;
-  font: {
-    weight: $font-weight-regular;
-    size: $font-size-medium;
-  }
-
-  @include mq-large-min {
-    // hard coded for now. Need to point to desktop form factor token here.
-    font-size: .875rem;
-  }
 }
 
 .#{$css-prefix}picklist__label {
-  position: relative;
-  display: inline-block;
-  border: $border-width-thin solid $color-border-input {
-    radius: $border-radius-medium;
-  };
-  padding: 0 $spacing-x-large 0 $spacing-small;
-  // min-width: 250px; // Tokenize
+  padding-right: $spacing-x-large;
+  min-width: $size-small;
+  max-width: $size-medium;
   font: {
     weight: $font-weight-light;
     size: $font-size-large;
   }
-  line-height: $line-height-button;
-  background-color: $color-background-input;
   color: $color-text-default;
-  cursor: pointer;
+  text-align: left;
 
   @include mq-large-min {
     // hard coded for now. Need to point to desktop form factor token here.
@@ -54,81 +39,14 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     fill: $color-text-icon-default;
   }
 
-  // @TODO - Might want to make this pattern global
   &[aria-disabled="true"] {
     border-color: $color-border-input-disabled;
     background-color: $color-background-input-disabled;
     cursor: not-allowed;
     user-select: none;
   }
-}
 
-.#{$css-prefix}picklist__options {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: $spacing-xx-small;
-  border: $border-width-thin solid $color-border-input {
-    radius: $border-radius-medium;
-  };
-  padding: $spacing-xx-small 0;
-  min-width: 250px; // @TODO: Tokenize
-  max-width: 300px; // @TODO: Tokenize
-  background-color: $color-background-input-active;
-}
-
-.#{$css-prefix}picklist__options-item {
-  position: relative;
-  display: block;
-  line-height: $line-height-button;
-
-  > span:not(.#{$css-prefix}text-heading--label),
-  > a {
+  .#{$css-prefix}truncate {
     display: block;
-    padding: 0 $spacing-small 0 $spacing-x-large;
-
-    &:hover {
-      background-color: $color-background-row-hover;
-      cursor: pointer;
-    }
-
-    &:active {
-      background-color: $color-background-row-active;
-    }
-  }
-
-  &[aria-selected="true"] {
-    background-color: $color-background-row-active;
-  }
-
-  .#{$css-prefix}icon {
-    @include square($square-icon-medium-content);
-    position: absolute;
-    top: 50%;
-    left: $spacing-small;
-    margin-top: (($square-icon-medium-content / 2) * -1);
-    fill: $color-text-icon-default-hover;
-  }
-}
-
-.#{$css-prefix}picklist__options--group {
-
-  .#{$css-prefix}text-heading--label {
-    display: block;
-    margin-left: $spacing-small;
-    padding: $spacing-small 0 $spacing-xx-small;
-    line-height: $line-height-reset;
-  }
-}
-
-.#{$css-prefix}picklist {
-  .#{$css-prefix}shown {
-    opacity: 1;
-    transition: opacity $duration-instantly ease-in-out;
-  }
-
-  .#{$css-prefix}hidden {
-    opacity: 0;
-    transition: opacity $duration-instantly ease-in-out;
   }
 }

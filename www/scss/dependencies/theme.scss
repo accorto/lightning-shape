@@ -1,18 +1,46 @@
-/* Lightning Design System v0.5.1 */
-/*
-Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+/* Lightning Design System v0.5.2 */
+// Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+// Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+// Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+// Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
+
 
 // If you have a horizontal list and want a dot as a list item separator
 //
 // Use - apply to repeating list items
+@mixin gradient-horizontal($start, $end, $direction: right) {
+
+  @if alpha($start) == 1 and alpha($end) == 1 {
+    background-color: $start;
+    background-image: linear-gradient(to $direction, rgba($start,0), $end);
+  }
+
+  @else {
+    background-image: linear-gradient(to $direction, $start, $end);
+  }
+}
+
+
+
+@mixin gradient-vertical($start, $end, $direction: bottom) {
+
+  @if alpha($start) == 1 and alpha($end) == 1 {
+    background-color: $start;
+    background-image: linear-gradient(to $direction, rgba($start,0), $end);
+  }
+
+  @else {
+    background-image: linear-gradient(to $direction, $start, $end);
+  }
+}
+
+
+
 @mixin dot-separator($size: 4px, $color: $color-background-alt-inverse) {
   position: relative;
 
@@ -39,6 +67,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 
   @include mq-medium-max {
+
     &:before {
       @include square($size);
       content: '';
@@ -48,11 +77,14 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       background-color: $color;
       margin-right: $spacing-small;
     }
+
     &:after {
       content: none;
     }
   }
 }
+
+
 
 // Inverse Links
 @mixin inverse-links {
@@ -83,6 +115,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 }
 
 
+
 // Border Helper
 @mixin border($borders: null) {
 
@@ -103,6 +136,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     }
   }
 }
+
+
 
 // Theme Helper
 @mixin theme($theme, $borders: null) {
@@ -133,6 +168,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   @include border($borders);
 }
 
+
+
 // Bounding Box for components
 @mixin box($theme: null, $padding: $spacing-medium, $border-radius: $border-radius-medium, $borders: null) {
   padding: $padding;
@@ -155,6 +192,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 }
 
+
+
 // Apply theme on hover for list items
 @mixin list-has-hovers {
 
@@ -170,6 +209,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 }
 
+
+
 // Apply theme on selection for list items
 @mixin list-has-selections {
 
@@ -184,14 +225,30 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 }
 
+@mixin list-has-bullets {
+  margin-left: $spacing-xx-large;
+  list-style: disc;
+}
+
+@mixin list-has-numbers {
+  margin-left: $spacing-xx-large;
+  list-style: decimal;
+}
+
+
+
 // Striped Gradient
 @mixin gradient-striped($stripe_color: rgba(black, 0.035), $angle: 45deg, $color: null) {
+
   @if $color != null {
     background-color: $color;
   }
+
   background-image: linear-gradient($angle, $stripe_color 25%, transparent 25%, transparent 50%, $stripe_color 50%, $stripe_color 75%, transparent 75%, transparent);
   background-size: 64px 64px
 }
+
+
 
 // Page header
 @mixin page-header {
@@ -199,4 +256,3 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   border-bottom: $border-width-thin solid $color-border;
   background: $color-background;
 }
-

@@ -1,4 +1,4 @@
-/* Lightning Design System v0.5.1 */
+/* Lightning Design System v0.5.2 */
 /*
 Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
@@ -12,12 +12,12 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 .#{$css-prefix}dropdown {
   margin-top: $spacing-xxx-small;
-  padding: $spacing-x-small 0;
+  padding: $spacing-xx-small 0;
   z-index: $z-index-dropdown;
   float: left;
   position: absolute;
   min-width: $size-xx-small;
-  max-width: $size-large;
+  max-width: $size-medium;
   left: 50%;
   transform: translateX(-50%);
   border: $border-width-thin solid $color-border;
@@ -37,7 +37,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 
   &--small {
-    min-width: 180px;
+    min-width: $size-small;
+  }
+
+  &--medium {
+    min-width: $size-medium;
   }
 
   &--large {
@@ -91,6 +95,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 
   &__item {
+    line-height: $line-height-text;
 
     > a,
     > span {
@@ -99,6 +104,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       color: $color-text-default;
       position: relative;
       white-space: nowrap;
+      cursor: pointer;
 
       &:hover,
       &:focus {
@@ -144,6 +150,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 
   .#{$css-prefix}has-icon {
+    position: relative;
 
     &--left > a,
     &--left > span {
