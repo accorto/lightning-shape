@@ -5,6 +5,7 @@ set -x
 # recreate assets
 gulp sass
 
+# copy to target folder
 TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart
 
 rm -R ${TARGET}/lib/assets

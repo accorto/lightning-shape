@@ -1,0 +1,21 @@
+/* LightningDart extension
+Lookup Auto visible
+*/
+
+.#{$css-prefix}lookup {
+
+  .#{$css-prefix}lookup__menu.auto-visible {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+  }
+
+  &:hover,
+  &:focus {
+    .#{$css-prefix}lookup__menu.auto-visible {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+    }
+  }
+}
