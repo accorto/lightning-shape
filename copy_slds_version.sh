@@ -11,7 +11,7 @@ SLDS=slds/salesforce-lightning-design-system-v0.5.2
 cp -R ${SLDS}/assets www
 cp -R ${SLDS}/scss www
 
-## delete not used files
+## delete not used icon files
 cd www/assets/icons
 rm -R action
 rm -R custom
@@ -26,6 +26,13 @@ rm standard-sprite/symbols.html
 rm utility-sprite/symbols.html
 rm README
 cd -
+
+# add extension entry
+cd www/sccs/components
+sed -i "" 's|;|, "ldart";|g' index.scss
+
+cd -
+
 
 # copy Logo
 cp LightningDartLogo.svg www/assets/images
