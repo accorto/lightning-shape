@@ -3,3 +3,5 @@ node_modules
 # don't replicate https://www.getslds.com/resources
 slds
 
+
+.idea/workspace.xml
