@@ -1,4 +1,4 @@
-/* Lightning Design System v0.5.2 */
+/* Lightning Design System v0.7.0 */
 /*
 Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
@@ -23,11 +23,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   line-height: $line-height-text;
   margin-right: $spacing-small;
 
-  @include mq-large-min {
-    // hard coded for now. Need to point to desktop form factor token here.
-     line-height: 1.5;
-  }
-
   .#{$css-prefix}is-required > &:before {
     content: '*';
     color: $color-text-error;
@@ -48,11 +43,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   font-size: $font-size-small;
   margin-top: $spacing-x-small;
   display: block;
-
-  @include mq-large-min {
-    // hard coded for now. Need to point to desktop form factor token here.
-    font-size: .75rem;
-  }
 
   .#{$css-prefix}has-error & {
     color: $color-text-error;

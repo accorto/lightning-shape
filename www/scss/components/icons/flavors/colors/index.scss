@@ -1,4 +1,4 @@
-/* Lightning Design System v0.5.2 */
+/* Lightning Design System v0.7.0 */
 /*
 Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
@@ -11,7 +11,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 */
 
 .#{$css-prefix}icon-text-default {
-  fill: $color-text-icon-default;
+  fill: $color-text-icon-default; //@TODO - should we use currentcolor?
 }
 
 .#{$css-prefix}icon-text-warning {

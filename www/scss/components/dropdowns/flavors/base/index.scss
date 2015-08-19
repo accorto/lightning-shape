@@ -1,4 +1,4 @@
-/* Lightning Design System v0.5.2 */
+/* Lightning Design System v0.7.0 */
 /*
 Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
@@ -45,6 +45,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 
   &--large {
+    min-width: $size-large;
     max-width: $max-width-action-overflow-menu;
   }
 
@@ -190,25 +191,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       visibility: visible;
       opacity: 1;
       transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
-    }
-  }
-
-  &.#{$css-prefix}click-to-show {
-
-    &:hover .#{$css-prefix}dropdown {
-      visibility: hidden;
-      opacity: 0;
-    }
-
-    > *:active,
-    > *:focus {
-      outline: 0;
-
-      ~ .#{$css-prefix}dropdown {
-        visibility: visible;
-        opacity: 1;
-        transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
-      }
     }
   }
 }

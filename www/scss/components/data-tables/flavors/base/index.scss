@@ -1,4 +1,4 @@
-/* Lightning Design System v0.5.2 */
+/* Lightning Design System v0.7.0 */
 /*
 Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
@@ -40,13 +40,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 
   // Table Heading Cells
-  th {
+  thead th {
     font-weight: $font-weight-regular;
-
-    @include mq-large-min {
-      // hard coded for now. Need to point to desktop form factor token here.
-      font-size: .75rem;
-    }
   }
 
   // Default Table Row Hover
@@ -70,6 +65,16 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   .#{$css-prefix}truncate {
     min-width: rem(52px);
     max-width: rem(240px);
+  }
+
+  // By default, nowrap is applied
+  .#{$css-prefix}cell-wrap {
+    white-space: normal;
+  }
+
+  // Apply to cell with checkbox and actions
+  .#{$css-prefix}cell-shrink {
+    width: 1%;
   }
 }
 
@@ -116,12 +121,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 }
 
-// Apply to cell with checkbox and actions
-.#{$css-prefix}row-select,
-.#{$css-prefix}row-action {
-  width: 1%;
-}
-
 // Applys move cursor to moveable cell
 .#{$css-prefix}is-sortable {
   cursor: pointer;
@@ -149,7 +148,3 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
 }
 
-// By default, nowrap is applied
-.#{$css-prefix}cell-wrap {
-  white-space: normal;
-}

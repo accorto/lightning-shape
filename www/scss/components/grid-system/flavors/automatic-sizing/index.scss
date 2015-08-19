@@ -1,4 +1,4 @@
-/* Lightning Design System v0.5.2 */
+/* Lightning Design System v0.7.0 */
 /*
 Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
@@ -26,6 +26,15 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
   .#{$css-prefix}text-longform & {
     padding-left: 0;
+  }
+}
+
+ul.#{$css-prefix}grid {
+
+  &,
+  .#{$css-prefix}text-longform & {
+    margin-left: 0;
+    list-style: none;
   }
 }
 
@@ -57,7 +66,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   @include mq-large-min {
 
     &--left {
-      border-right: 1px solid $color-border-separator;
+      border-left: 1px solid $color-border-separator;
     }
 
     &--right {
@@ -65,11 +74,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     }
 
     &--top {
-      border-right: 1px solid $color-border-separator;
+      border-top: 1px solid $color-border-separator;
     }
 
     &--bottom {
-      border-right: 1px solid $color-border-separator;
+      border-bottom: 1px solid $color-border-separator;
     }
   }
 }

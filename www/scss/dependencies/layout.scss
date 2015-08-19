@@ -1,4 +1,4 @@
-/* Lightning Design System v0.5.2 */
+/* Lightning Design System v0.7.0 */
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -12,8 +12,8 @@
 
 // Grid
 $grid: (
-  "tiny": (
-    "breakpoint": $mq-tiny,
+  "x-small": (
+    "breakpoint": $mq-x-small,
     "columns": 2,
   ),
   "small": (
@@ -43,16 +43,16 @@ $grid: (
 
 
 // TINY - 320px - 20rem
-@mixin mq-tiny-min {
+@mixin mq-x-small-min {
 
-  @media (min-width: pem($mq-tiny)) {
+  @media (min-width: pem($mq-x-small)) {
     @content;
   }
 }
 
-@mixin mq-tiny-max {
+@mixin mq-x-small-max {
 
-  @media (max-width: pem($mq-tiny - 1)) {
+  @media (max-width: pem($mq-x-small - 1)) {
     @content;
   }
 }
@@ -272,23 +272,6 @@ $grid: (
 
 
 
-// Parent - Flexbox Container
-// @TODO - this will become deprecated
-@mixin flex-contain(
-  $display: flex,
-  $x-align: flex-start,
-  $y-align: stretch,
-  $direction: row,
-  $wrap: nowrap
-  ) {
-    display: $display;
-    justify-content: $x-align;
-    align-items: $y-align;
-    flex-flow: $direction $wrap;
-    list-style: none;
-}
-
-
 
 // Truncate
 @mixin truncate {
@@ -361,3 +344,55 @@ $grid: (
    width: $size;
   height: $size;
 }
+
+
+@mixin visibility($class-name, $min:null, $max:null) {
+
+  .#{$css-prefix}#{$class-name} {
+
+    &-show {
+      display: none;
+
+      @if $min {
+        @media (min-width: $min) {
+          display: block;
+
+          &--inline-block {
+            display: inline-block;
+          }
+          &--inline {
+            display: inline;
+          }
+        }
+      }
+    }
+
+    @if $min and $max {
+
+      &-show-only {
+        display: none;
+
+        @media (min-width: $min) and (max-width: $max - 1) {
+          display: block;
+
+          &--inline-block {
+            display: inline-block;
+          }
+          &--inline {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  @if $max {
+
+    .#{$css-prefix}max-#{$class-name}-hide {
+
+      @media (max-width: $max - 1) {
+        display: none;
+      }
+    }
+  }
+}
+

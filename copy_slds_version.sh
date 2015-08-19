@@ -4,7 +4,7 @@ set -x
 
 # copy current version of slds
 
-SLDS=slds/salesforce-lightning-design-system-v0.5.2
+SLDS=slds/salesforce-lightning-design-system-v0.7.0
 
 ## Copy to target
 
@@ -28,7 +28,7 @@ rm README
 cd -
 
 # add extension entry
-cd www/sccs/components
+cd www/scss/components
 sed -i "" 's|;|, "ldart";|g' index.scss
 
 cd -
