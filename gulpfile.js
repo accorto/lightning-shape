@@ -10,6 +10,8 @@ var autoprefixer = require('gulp-autoprefixer');
 // https://www.npmjs.com/package/gulp-strip-css-comments/
 var stripCssComments = require('gulp-strip-css-comments');
 var removeEmptyLines = require('gulp-remove-empty-lines');
+// https://www.npmjs.com/package/gulp-replace
+var replace = require('gulp-replace');
 
 // https://www.npmjs.com/package/gulp-scss-lint/
 var scsslint = require('gulp-scss-lint');
@@ -25,6 +27,7 @@ gulp.task('sass', function () {
         .pipe(stripCssComments())
         .pipe(removeEmptyLines())
         .pipe(autoprefixer())
+        .pipe(replace('/assets/fonts/', '../fonts/'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('www/assets/styles'));
 });
