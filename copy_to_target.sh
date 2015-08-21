@@ -11,6 +11,9 @@ TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart
 rm -R ${TARGET}/lib/assets
 cp -R www/assets ${TARGET}/lib
 
+# delete not used css in target
+rm ${TARGET}/lib/assets/styles/salesforce-lightning*
+
 cp LightningDartLogo.svg ${TARGET}
 
 
