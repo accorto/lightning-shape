@@ -1,4 +1,4 @@
-/* Lightning Design System v0.7.0 */
+/* Lightning Design System v0.8.0 */
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -192,7 +192,7 @@ $grid: (
       // Begin creating a numberator for our fraction up until we hit the denominator.
       @for $numerator from 1 through $denominator {
 
-        // Build a class in the format `.slds-size--3-of-4`.
+        // Build a class in the format `.#{$css-prefix}size--3-of-4`.
         .#{$css-prefix}#{$breakpoint-string}size--#{$numerator}-of-#{$denominator} {
           width: ($numerator / $denominator) * 100%;
         }
@@ -210,7 +210,7 @@ $grid: (
 
     @for $numerator from 1 to $denominator {
 
-      // Build a class in the format `.slds-order--1`.
+      // Build a class in the format `.#{$css-prefix}order--1`.
       .#{$css-prefix}#{$breakpoint}order--#{$numerator} {
         order: $numerator;
       }

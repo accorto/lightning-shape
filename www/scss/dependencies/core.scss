@@ -1,4 +1,4 @@
-/* Lightning Design System v0.7.0 */
+/* Lightning Design System v0.8.0 */
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -12,20 +12,14 @@
 
 @mixin core($scoped: null) {
   @if $scoped == 'scoped' {
-    $scoped-selector: '&' !default;
-    $scoped-root:     $scoped-selector !default;
-    $scoped-body:     '&:not(html), body' !default;
+    $scoped-selector: '&';
+    $scoped-root:     $scoped-selector;
+    $scoped-body:     '&:not(html), body';
   }
 
-  @else {
-    $scoped-selector: '' !default;
-    $scoped-root:     'html' !default;
-    $scoped-body:     'body' !default;
-  }
-
-/* ---------------------------------------------------------------------------
- * ROOT
- */
+  $scoped-selector: '' !default;
+  $scoped-root:     'html' !default;
+  $scoped-body:     'body' !default;
 
 
 
@@ -48,7 +42,6 @@
     color: $color-text-default;
     -webkit: {
       tap-highlight-color: rgba(0, 0, 0, 0);
-      overflow-scrolling: touch;
     }
   }
 
@@ -120,7 +113,7 @@
 
   a {
     text-decoration: none;
-    transition: color 0.1s linear;
+    transition: color .1s linear;
 
 
     &:link,

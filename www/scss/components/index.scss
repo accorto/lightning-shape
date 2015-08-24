@@ -1,4 +1,4 @@
-/* Lightning Design System v0.7.0 */
+/* Lightning Design System v0.8.0 */
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -10,10 +10,6 @@
 
 
 
-/* ---------------------------------------------------------------------------
- * COMPONENTS
- */
-
 @import
 
   // Activity Timeline
@@ -21,8 +17,6 @@
 
   // Anchor
   "page-headers/flavors/record-home/index",
-  "page-headers/flavors/object-home/index",
-  "page-headers/flavors/related-list/index",
 
   // Breadcrumbs
   "breadcrumbs/flavors/base/index",
@@ -41,7 +35,6 @@
   "buttons/flavors/stateful/index",
   "buttons/flavors/stateful-inverse/index",
   "buttons/flavors/icon/index",
-  "buttons/flavors/icon-sizing/index",
   "buttons/flavors/hint/index",
   "buttons/flavors/icon-more/index",
   "buttons/flavors/icon-stateful/index",
@@ -63,7 +56,6 @@
   "forms/flavors/inline-form/index",
   "forms/flavors/compound-form/index",
   "forms/flavors/read-only-state/index",
-  "forms/flavors/field-level-help/index",
 
   // Grid
   "grid-system/flavors/automatic-sizing/index",
@@ -90,7 +82,7 @@
   // Menus
   "dropdowns/flavors/base/index",
   "dropdowns/flavors/menu/index",
-  "dropdowns/flavors/menu-with-search/index",
+  //"dropdowns/flavors/menu-with-search/index",
   "dropdowns/flavors/menu-with-icons/index",
   "dropdowns/flavors/action-overflow/index",
   "dropdowns/flavors/search-overflow/index",
@@ -110,8 +102,6 @@
 
   // Pills
   "pills/flavors/base/index",
-  "pills/flavors/unlink/index",
-  "pills/flavors/icon/index",
   "pills/flavors/portrait/index",
 
   // Spinners
@@ -124,10 +114,8 @@
   "tiles/flavors/with-icon/index",
   "tiles/flavors/with-actions/index",
   "tiles/flavors/with-badge/index",
-  "tiles/flavors/list/index",
   "tiles/flavors/board/index",
   "tiles/flavors/generic/index",
-  "tiles/flavors/task/index",
   "tiles/flavors/author/index",
 
   // Tree
@@ -149,7 +137,6 @@
   "lookups/flavors/single-scope/index",
   "lookups/flavors/multi-scope/index",
   "lookups/flavors/advanced-modal/index",
-  "lookups/flavors/popup/index",
 
   // Objects
   "media-objects/flavors/base/index",
