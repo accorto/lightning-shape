@@ -1,13 +1,14 @@
-# Lightning Design
+# Lightning Shape
 
-LightningDart SCSS - SLDS
+Styles and Layout for **Lightning Dart**
 
 Building on Salesforce Lightning Design System
 https://www.getslds.com/
 
 
+## Direct Use
 
-## Differences
+### Differences
 
 VisualForce
 

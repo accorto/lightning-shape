@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lightning-design.iml" filepath="$PROJECT_DIR$/lightning-design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lightning-shape.iml" filepath="$PROJECT_DIR$/lightning-shape.iml" />
     </modules>
   </component>
 </project>
