@@ -1,0 +1,40 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+.menu-main {
+
+  max-width: 3.5rem; // 56px
+
+  // Main Menu Link
+  .menu-main-show,
+  .menu-main-entry {
+    display: block;
+    height: 3.5rem;
+    padding: 1rem;
+    text-decoration: none !important;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    // Menu Text
+    span {
+      margin-left: 1rem;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: lightgreen;
+    }
+    .slds-is-selected {
+      background-color: green !important;
+    }
+
+  }
+
+  &:hover,
+  &:focus {
+    max-width: 12rem;
+  }
+}

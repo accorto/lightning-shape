@@ -13,16 +13,10 @@ TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart
 
 rm -R ${TARGET}/lib/assets
 cp -R www/assets ${TARGET}/lib
-cp LightningDartLogo.svg ${TARGET}
 
 # delete not used css in target
 rm ${TARGET}/lib/assets/styles/salesforce-lightning*
 
-
-# copy to GitHubPages
-GITHUB=/Users/jorg/Documents/Accorto/gh-pages/lightning-dart/
-
-cp -R ${TARGET}/lib/assets/* ${GITHUB}
-cp www/assets/images/*.ico ${GITHUB}
-cp LightningDartLogo.svg ${GITHUB}
+cp www/assets/images/*.ico ${TARGET}/web
+cp LightningDartLogo.svg ${TARGET}/web
 
