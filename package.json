@@ -1,9 +1,9 @@
 {
   "name": "lightning-design",
-  "version": "0.5.1",
+  "version": "0.8.0",
   "description": "LightningDart SCSS",
   "private": true,
-  "author": "Accorto <support@accorto.com>",
+  "author": "Accorto <lightning@accorto.com>",
   "license": "GPLv3",
   "scripts": {
     "start": "node server.js"

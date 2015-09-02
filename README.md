@@ -1,9 +1,11 @@
 # Lightning Shape
 
 Styles and Layout for **Lightning Dart**
+https://github.com/accorto/lightning-dart
+http://lightningdart.com
 
-Building on Salesforce Lightning Design System
-https://www.getslds.com/
+Extending Salesforce Lightning Design System
+https://www.lightningdesignsystem.com
 
 
 ## Direct Use

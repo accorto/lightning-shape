@@ -2,9 +2,10 @@ var path = require('path');
 // https://github.com/sass/node-sass
 var sass = require('node-sass');
 
+// creates errors at this time, use gulp
 sass.render({
-  file: 'styles.scss',
-  outFile: 'styles1.css',
+  file: 'lightningdart.scss',
+  outFile: 'lightningdart.css',
   //outputStyle: 'compressed', // nested, expanded, compact, compressed
   sourceMap: true
 }, function (error, result) {
