@@ -1,0 +1,60 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+
+// busy + loading
+
+.busy-backdrop {
+  @include duration-slowly;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $color-background-temp-modal-tint-alt;
+  z-index: $z-index-modal+200;
+
+  &--open {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity $duration-slowly linear;
+  }
+}
+
+.loading-backdrop {
+  @include duration-slowly;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $color-background-temp-modal-tint-alt;
+  z-index: $z-index-modal+100;
+
+  &--open {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity $duration-slowly linear;
+  }
+}
+
+// https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+// center middle
+.center-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

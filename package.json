@@ -3,7 +3,8 @@
   "version": "0.8.0",
   "description": "LightningDart SCSS",
   "private": true,
-  "author": "Accorto <lightning@accorto.com>",
+  "author": "Accorto <lightningart --version
+  @accorto.com>",
   "license": "GPLv3",
   "scripts": {
     "start": "node server.js"

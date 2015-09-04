@@ -23,18 +23,14 @@
       margin-left: 1rem;
     }
 
-    &:hover,
-    &:focus {
-      background-color: lightgreen;
-    }
-    .slds-is-selected {
-      background-color: green !important;
+    &.slds-is-selected {
+      background-color: $color-brand;
     }
 
   }
 
   &:hover,
-  &:focus {
+  &.expaned {
     max-width: 12rem;
   }
 }
