@@ -7,7 +7,7 @@ cd www/assets/images
 # 1024 png
 ICON=LightningDartLogo.png
 ## https://cloudconvert.com/svg-to-png
-## convert -background none ld.svg $ICON -- does not work!
+convert -background none LightningDartLogo.svg $ICON
 
 convert $ICON -define icon:auto-resize=64,48,32,16 favicon.ico
 convert $ICON -resize 120 LightningDartLogo-120.png
