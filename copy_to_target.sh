@@ -18,5 +18,5 @@ cp -R www/assets ${TARGET}/lib
 rm ${TARGET}/lib/assets/styles/salesforce-lightning*
 
 cp www/assets/images/*.ico ${TARGET}/web
-cp LightningDartLogo.svg ${TARGET}/web
+cp LightningDartLogo*.svg ${TARGET}/web
 

@@ -8,6 +8,9 @@ Extending Salesforce Lightning Design System
 https://www.lightningdesignsystem.com
 
 
+<img src="http://lightningdart.com/LightningDartLogo.svg" width="60"/>
+
+
 ## Direct Use
 
 ### Differences

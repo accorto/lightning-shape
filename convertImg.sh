@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
-cp LightningDartLogo.svg www/assets/images
+cp LightningDartLogo*.svg www/assets/images
 
 cd www/assets/images
 # 1024 png
