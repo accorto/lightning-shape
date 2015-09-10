@@ -3,5 +3,8 @@ node_modules
 # don't replicate https://www.getslds.com/resources
 slds
 
+# https://github.com/jonathantneal/svg4everybody
+/svg4everybody/svg4everybody-1.0.0
+
 
 .idea/workspace.xml
