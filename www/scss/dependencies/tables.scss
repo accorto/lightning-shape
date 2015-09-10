@@ -1,4 +1,4 @@
-/* Lightning Design System v0.8.0 */
+/* Lightning Design System v0.9.0 */
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -23,6 +23,10 @@
       left: -9999em;
     }
 
+    th {
+      border-top: none;
+    }
+
     tr {
       display: block;
       border-top: $border-width-thick solid $color-border;
@@ -33,7 +37,6 @@
       padding: $spacing-small;
       width: 100%;
       clear: both;
-      padding: $spacing-small;
       white-space: normal;
       overflow: hidden;
       text-align: left;
@@ -45,7 +48,7 @@
         color: $color-text-label;
         text-transform: uppercase;
         font: {
-          family: $font-family-body;
+          family: $font-family;
           size: $font-size-small;
           weight: $font-weight-light;
         }
@@ -57,9 +60,13 @@
       padding: $spacing-small;
     }
 
-    &:not(.#{$css-prefix}no-row-hover) tr:hover td {
-      background-color: inherit;
-      box-shadow: none;
+    &:not(.#{$css-prefix}no-row-hover) tbody tr:hover {
+
+      td,
+      th {
+        background-color: inherit;
+        box-shadow: none;
+      }
     }
 
     .#{$css-prefix}is-interactive .#{$css-prefix}button {
