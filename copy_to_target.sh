@@ -11,6 +11,10 @@ gulp sass
 # copy to target folder - sorry hardcoded
 TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart
 
+# save scripts
+mkdir -p www/assets/scripts
+cp ${TARGET}/lib/assets/scripts/* www/assets/scripts/
+
 rm -R ${TARGET}/lib/assets
 cp -R www/assets ${TARGET}/lib
 
