@@ -5,8 +5,7 @@
  */
 
 
-// busy + loading
-
+// busy - all screen
 .busy-backdrop {
   @include duration-slowly;
   opacity: 0;
@@ -28,6 +27,12 @@
   }
 }
 
+/// Loading container (parent)
+.loading {
+  position: relative;
+}
+
+/// loading container
 .loading-backdrop {
   @include duration-slowly;
   opacity: 0;
