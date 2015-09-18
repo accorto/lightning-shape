@@ -1,0 +1,43 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+// range editor
+
+
+.#{$css-prefix}input-has-prefix {
+  position: relative;
+
+  .#{$css-prefix}input__prefix {
+    line-height: $line-height-button;
+    position: absolute;
+    top: 0;
+    tab-index: -1;
+    color: $color-text-input-icon; // $color-text-input-disabled;
+  }
+
+  &--left {
+    .#{$css-prefix}input__prefix {
+      left: $spacing-small; // 0.75 rem
+    }
+
+    .#{$css-prefix}input,
+    .#{$css-prefix}input--bare {
+      margin-left: $spacing-xx-large; // 3 rem
+      width: calc(100% - #{$spacing-xx-large}); // only for one side
+    }
+  }
+
+  &--right {
+    .#{$css-prefix}input__prefix {
+      right: $spacing-small;
+    }
+
+    .#{$css-prefix}input,
+    .#{$css-prefix}input--bare {
+      margin-right: $spacing-xx-large;
+    }
+  }
+}
