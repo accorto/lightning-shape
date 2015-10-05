@@ -18,3 +18,17 @@
   }
 }
 
+
+// Text and Icon Colors
+.text-error {
+  color: $color-text-error;
+  stroke: $color-text-error;
+}
+.text-warning {
+  color: $color-text-warning;
+  stroke: $color-text-warning;
+}
+.text-success {
+  color: $color-background-toast-success;
+  stroke: $color-background-toast-success;
+}
