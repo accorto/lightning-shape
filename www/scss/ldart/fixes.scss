@@ -5,10 +5,3 @@
  */
 
 // Temporary fixes
-
-
-// fix: multi-select height limitations
-.slds-select[size] {
-  min-height: $line-height-button;
-  height: inherit;
-}

@@ -19,7 +19,7 @@ var scsslint = require('gulp-scss-lint');
 /// Create css+map semi-minimized (no comments, empty lines, ..)
 gulp.task('sass', function () {
     // https://github.com/sass/node-sass
-    return gulp.src('lightningdart.scss')
+    return gulp.src('www/scss/lightningdart.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({sourcemap: true,
             outputStyle: 'nested'}) // nested, expanded, compact, compressed
