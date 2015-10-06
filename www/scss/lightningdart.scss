@@ -1,0 +1,14 @@
+// Lightning Design System
+
+// overwrite tokens
+// $color-text-placeholder: rgb(84, 105, 141);
+$color-text-placeholder: rgba(84, 105, 141, 0.60);
+
+// lightning design system
+@import "index";
+
+// components/ldart.scs
+// added to components/index.scss
+
+// Lightning Design System
+@import "ldart/index";
