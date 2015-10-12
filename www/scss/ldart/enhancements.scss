@@ -32,3 +32,14 @@
   color: $color-background-toast-success;
   stroke: $color-background-toast-success;
 }
+
+
+/// Decimal number
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  &.decimal {
+    -moz-appearance:textfield;
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
