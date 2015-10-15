@@ -10,3 +10,9 @@
   // Lookup
   "lookups/flavors/base/ldart";
 
+// Modal Small
+.#{$css-prefix}modal--small .#{$css-prefix}modal__container {
+  width: 90%;
+  max-width: 550px; // 960
+  // min-width: 480px; // 640
+}
