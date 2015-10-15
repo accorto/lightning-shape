@@ -27,12 +27,6 @@ rm utility-sprite/symbols.html
 rm README
 cd -
 
-# add extension entry
-cd www/scss/components
-sed -i "" 's|;|, "ldart";|g' index.scss
-
-cd -
-
 
 # copy Logo
 cp LightningDartLogo.svg www/assets/images

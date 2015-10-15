@@ -4,12 +4,6 @@
  * License options+support:  https://lightningdart.com
  */
 
-/* LightningDart component extensions */
-@import
-
-  // Lookup
-  "lookups/flavors/base/ldart";
-
 // Modal Small
 .#{$css-prefix}modal--small .#{$css-prefix}modal__container {
   width: 90%;

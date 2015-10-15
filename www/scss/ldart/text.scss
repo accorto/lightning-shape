@@ -4,21 +4,6 @@
  * License options+support:  https://lightningdart.com
  */
 
-
-// Text Section title - remove outline
-.slds-section-title {
-  user-select: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  a:focus {
-    outline: none;
-    box-shadow: none;
-  }
-}
-
-
 // Text and Icon Colors
 .text-error {
   color: $color-text-error;
@@ -31,15 +16,4 @@
 .text-success {
   color: $color-background-toast-success;
   stroke: $color-background-toast-success;
-}
-
-
-/// Decimal number
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-  &.decimal {
-    -moz-appearance:textfield;
-    -webkit-appearance: none;
-    margin: 0;
-  }
 }

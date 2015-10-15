@@ -6,7 +6,6 @@
 
 // range editor
 
-
 .#{$css-prefix}input-has-prefix {
   position: relative;
 
@@ -39,5 +38,16 @@
     .#{$css-prefix}input--bare {
       margin-right: $spacing-xx-large;
     }
+  }
+}
+
+
+/// Decimal number
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  &.decimal {
+    -moz-appearance:textfield;
+    -webkit-appearance: none;
+    margin: 0;
   }
 }

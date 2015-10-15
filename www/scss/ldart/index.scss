@@ -7,25 +7,11 @@
 @import
   "apps",
   "busy",
+  "dnd",
   "editors",
-  "enhancements",
-  "fixes"
-  ;
+  "form",
+  "lookup",
+  "modal",
+  "text",
 
-
-// Drag
-.grab {
-  cursor: -moz-grab;
-  cursor: url(https://www.google.com/intl/en_ALL/mapfiles/openhand.cur), move;
-  * {
-    user-select: none;
-  }
-}
-.grabbing {
-  cursor: -moz-grabbing;
-  cursor: url(https://www.google.com/intl/en_ALL/mapfiles/closedhand.cur), move;
-  * {
-    user-select: none;
-  }
-}
-
+  "fixes";
