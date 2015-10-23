@@ -4,7 +4,13 @@ set -x
 
 # copy current version of slds
 
-SLDS=slds/salesforce-lightning-design-system-0.9.2
+## from node module
+# npm install @salesforce-ux/design-system --save
+# npm install @salesforce-ux/design-tokens --save
+# npm install @salesforce-ux/icons --save
+# npm outdated
+# npm install
+SLDS=node_modules/@salesforce-ux/design-system
 
 ## Copy to target
 

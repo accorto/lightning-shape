@@ -11,6 +11,18 @@ https://www.lightningdesignsystem.com
 <img src="http://lightningdart.com/LightningDartLogo.svg" width="60"/>
 
 
+## Build (via node + gulp)
+
+	npm install
+	gulp sass
+
+### design system npm module
+
+	npm install @salesforce-ux/design-system --save
+	
+	
+	
+
 ## Direct Use
 
 ### Differences
@@ -49,9 +61,5 @@ Html5
               </div>
 
 
-## Build (via node + gulp)
-
-	npm install
-	gulp sass
 	
 	
