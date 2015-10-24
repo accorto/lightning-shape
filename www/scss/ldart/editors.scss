@@ -4,7 +4,7 @@
  * License options+support:  https://lightningdart.com
  */
 
-// range editor
+// Prefix, e.g. range editor
 
 .#{$css-prefix}input-has-prefix {
   position: relative;
@@ -42,7 +42,7 @@
 }
 
 
-/// Decimal number
+// Decimal number
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   &.decimal {
@@ -50,4 +50,22 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
+}
+
+
+// Read Only
+.slds-input,
+.slds-textarea {
+  &:read-only{
+    border-color: $color-border-input-disabled;
+    background-color: $color-background-stencil;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}
+.slds-select.read-only {
+  border-color: $color-border-input-disabled;
+  background-color: $color-background-stencil;
+  box-shadow: none;
+  cursor: not-allowed;
 }
