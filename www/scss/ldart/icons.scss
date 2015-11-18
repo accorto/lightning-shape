@@ -4,15 +4,13 @@
  * License options+support:  https://lightningdart.com
  */
 
-@import
-  "apps",
-  "busy",
-  "dnd",
-  "editors",
-  "form",
-  "icons",
-  "lookup",
-  "modal",
-  "text",
+// icon classes
 
-  "fixes";
+// rotate 90
+.rotate-right {
+  transform: rotate(90deg);
+}
+// rotate -90
+.rotate-left {
+  transform: rotate(-90deg);
+}
