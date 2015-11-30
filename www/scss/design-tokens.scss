@@ -8,16 +8,16 @@
 // THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 @import
-  "../../node_modules/@salesforce-ux/design-tokens/dist/force-base.default",
+  "../../node_modules/@salesforce-ux/design-tokens/dist/force-base.default.scss",
   "../../node_modules/@salesforce-ux/design-tokens/dist/force-base.map",
-  "../../node_modules/@salesforce-ux/design-tokens/dist/s1-base-large",
-  "../../node_modules/@salesforce-ux/design-tokens/dist/s1-base.default",
-  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-actions.default",
-  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-custom.default",
-  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-standard.default",
-  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-actions.map",
-  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-custom.map",
-  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-standard.map";
+  "../../node_modules/@salesforce-ux/design-tokens/dist/s1-base-large.scss",
+  "../../node_modules/@salesforce-ux/design-tokens/dist/s1-base.default.scss",
+  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-actions.default.scss",
+  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-custom.default.scss",
+  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-standard.default.scss",
+  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-actions.map.scss",
+  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-custom.map.scss",
+  "../../node_modules/@salesforce-ux/design-tokens/dist/bg-standard.map.scss";
 
 
 // TODO: Add to Design Tokens
@@ -28,7 +28,8 @@ $mq-x-small:   320px !default;
 $mq-small:  480px !default;
 $mq-medium: 768px !default;
 $mq-large:  1024px !default;
+$sales-path: 2rem; // @TODO: Temp token till we align sizing
 
 $force-base-map: map-merge($force-base-map, (
-  "spacing-xx-large": $spacing-xx-large
+    "spacing-xx-large": $spacing-xx-large
 ));

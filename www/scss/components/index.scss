@@ -39,7 +39,13 @@
   "buttons/flavors/icon-more/index",
   "buttons/flavors/icon-stateful/index",
   "buttons/flavors/icon-inverse/index",
-  "buttons/flavors/responsive/index",
+  "buttons/flavors/stretch/index",
+  "buttons/flavors/horizontal/index",
+
+  // Icons
+  "icons/flavors/base/index",
+  "icons/flavors/colors/index",
+  "icons/flavors/sizes/index",
 
   // Card
   "cards/flavors/base/index",
@@ -52,12 +58,14 @@
   "forms/flavors/radio/index",
   "forms/flavors/checkbox/index",
   "forms/flavors/select/index",
+  "forms/flavors/multi-select/index",
   "forms/flavors/horizontal-form/index",
   "forms/flavors/stacked-form/index",
   "forms/flavors/inline-form/index",
   "forms/flavors/compound-form/index",
   "forms/flavors/read-only-state/index",
   "forms/flavors/validation-state/index",
+  "forms/flavors/edit-dialog-for-touch/index",
 
   // Grid
   "grid-system/flavors/automatic-sizing/index",
@@ -75,19 +83,18 @@
 
   // Popovers
   "popovers/flavors/base/index",
-
-   // Picklists
-  "picklists/flavors/base/index",
-  "picklists/flavors/multi-select/index",
+  "popovers/flavors/tooltips/index",
+  "popovers/flavors/panels/index",
+  "popovers/flavors/nubbins/index",
 
   // Menus
-  "dropdowns/flavors/base/index",
-  "dropdowns/flavors/menu/index",
-  //"dropdowns/flavors/menu-with-search/index",
-  "dropdowns/flavors/menu-with-icons/index",
-  "dropdowns/flavors/action-overflow/index",
-  "dropdowns/flavors/search-overflow/index",
-  "dropdowns/flavors/positioning/index",
+  "menus/flavors/dropdown/index",
+  "menus/flavors/dropdown-with-icons/index",
+  "menus/flavors/dropdown-positioning/index",
+  "menus/flavors/picklist/index",
+  "menus/flavors/action-overflow/index",
+  "menus/flavors/action-overflow-for-touch/index",
+  "menus/flavors/search-overflow/index",
 
   // Datepicker
   "datepickers/flavors/base/index",
@@ -107,7 +114,7 @@
   "feeds/flavors/comment-with-overflow/index",
   "feeds/flavors/comment-with-attachments/index",
 
- // Modal
+  // Modal
   "modals/flavors/base/index",
   "modals/flavors/large/index",
   "modals/flavors/directional/index",
@@ -136,13 +143,17 @@
 
   // Tabs
   "tabs/flavors/default/index",
+  "tabs/flavors/overflow/index",
   "tabs/flavors/scoped/index",
+  "tabs/flavors/sales-path/index",
 
   // Notifications -- Toasts & Alerts
   "notifications/flavors/base/index",
   "notifications/flavors/alert/index",
   "notifications/flavors/toast/index",
-  "notifications/flavors/modal/index",
+  "notifications/flavors/prompt/index",
+  "notifications/flavors/prompt-for-touch/index",
+  "notifications/flavors/modal-toast/index",
 
   // Lookup
   "lookups/flavors/base/index",
@@ -164,11 +175,6 @@
 
   // Badges
   "badges/flavors/base/index",
-
-  // Icons
-  "icons/flavors/base/index",
-  "icons/flavors/colors/index",
-  "icons/flavors/sizes/index",
 
   // Tables
   "data-tables/flavors/base/index",

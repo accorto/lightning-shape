@@ -8,8 +8,11 @@ set -x
 # npm install @salesforce-ux/design-system --save
 # npm install @salesforce-ux/design-tokens --save
 # npm install @salesforce-ux/icons --save
+
 # npm outdated
+# npm update
 # npm install
+# npm ls --depth 0
 SLDS=node_modules/@salesforce-ux/design-system
 
 ## Copy to target
