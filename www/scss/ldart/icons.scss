@@ -14,3 +14,8 @@
 .rotate-left {
   transform: rotate(-90deg);
 }
+
+// success fill icon
+.slds-icon-text-success {
+  fill: $color-background-toast-success;
+}
