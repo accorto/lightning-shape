@@ -6201,6 +6201,6 @@ input[type=number]::-webkit-inner-spin-button.decimal {
   color: #04844b;
   stroke: #04844b; }
 .slds-tabs--path {
-  overflow: hidden; }
+  overflow: auto; }
 
 /*# sourceMappingURL=lightningdart.css.map */
