@@ -13,6 +13,12 @@ set -x
 # npm update
 # npm install
 # npm ls --depth 0
+
+#├── @salesforce-ux/design-system@0.12.1
+#├── @salesforce-ux/design-tokens@1.3.1
+#├── @salesforce-ux/icons@3.3.0
+
+
 SLDS=node_modules/@salesforce-ux/design-system
 
 ## Copy to target

@@ -6,17 +6,12 @@
 
 // Temporary fixes
 
-// mobile
+// mobile space restriction
 .slds-tabs--path {
   overflow: auto;
 }
-.slds-tabs--path__title {
-  padding-left: 0.15rem;
-}
 
-// Button Group in Table
-//.slds-button-group {
-  .slds-button {
-    white-space: nowrap;
-  }
-//}
+// Button not to wrap text
+.slds-button {
+  white-space: nowrap;
+}
