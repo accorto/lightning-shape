@@ -17,6 +17,7 @@
     color: $color-text-input-icon; // $color-text-input-disabled;
   }
 
+  // before the field
   &--left {
     .#{$css-prefix}input__prefix {
       left: $spacing-small; // 0.75 rem
@@ -29,6 +30,7 @@
     }
   }
 
+  // after the field
   &--right {
     .#{$css-prefix}input__prefix {
       right: $spacing-small;
@@ -38,6 +40,30 @@
     .#{$css-prefix}input--bare {
       margin-right: $spacing-xx-large;
     }
+  }
+}
+
+
+// left inside input
+.#{$css-prefix}input__dock {
+  position: absolute;
+  left: 0.5rem;
+  top: 25%;
+  color: $color-text-input-icon; // $color-text-input-disabled;
+}
+.#{$css-prefix}input-has-dock {
+  padding-left: 6rem;
+}
+
+
+// second right icon (clear)
+.#{$css-prefix}input-has-icon--right2 {
+  .#{$css-prefix}input__icon2 {
+    right: 2.5rem;// $spacing-xx-large; = 3rem
+  }
+  .#{$css-prefix}input,
+  .#{$css-prefix}input--bare {
+    padding-right: $spacing-xx-large; // 3 rem (3.5 would be better)
   }
 }
 

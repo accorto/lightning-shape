@@ -26,3 +26,27 @@
     }
   }
 }
+
+.slds-pill__container {
+  &[aria-disabled="true"] {
+    background-color: $color-background-input-disabled;
+    border-color: #a8b7c7; // This is throwing an error as if it doesn't exist $color-border-input-disabled;
+    cursor: not-allowed;
+    user-select: none;
+    box-shadow: none;
+    .slds-pill {
+      background: transparent;
+    }
+  }
+
+  &[aria-readonly="true"] {
+    border-color: $color-border-input-disabled;
+    background-color: $color-background-stencil;
+    cursor: not-allowed;
+    box-shadow: none;
+    .slds-pill {
+      background: transparent;
+    }
+  }
+
+}
