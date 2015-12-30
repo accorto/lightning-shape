@@ -4,6 +4,7 @@
  * License options+support:  https://lightningdart.com
  */
 
+// full apps menu
 .apps-menu {
 
   max-width: 3.5rem; // 56px
@@ -31,5 +32,20 @@
 
   &.expaned {
     max-width: 12rem;
+  }
+}
+
+// small apps menu
+.apps-menu-small {
+  width: 0.5rem;
+
+  .apps-menu-btn {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 0.5rem;
+    height: 1.5rem;
+    background-color: $color-background-alt-inverse;
+    border-radius: $border-radius-small;
   }
 }
