@@ -27,6 +27,16 @@
   }
 }
 
+// lookup items
+.#{$css-prefix}lookup__item {
+  @include list-has-selections;
+
+  .description {
+    margin-left: 0.25rem;
+    overflow: hidden;
+  }
+}
+
 .slds-pill__container {
   &[aria-disabled="true"] {
     background-color: $color-background-input-disabled;
