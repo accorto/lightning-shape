@@ -11,6 +11,12 @@
   color: transparent;
   overflow: hidden;
 }
+// test mode
+.status-test {
+  white-space: nowrap;
+  font-size: xx-small;
+  overflow: hidden;
+}
 
 // busy - all screen
 .busy-backdrop {
