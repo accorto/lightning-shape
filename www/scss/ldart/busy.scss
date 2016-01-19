@@ -4,6 +4,13 @@
  * License options+support:  https://lightningdart.com
  */
 
+// "hidden" status info
+.status-info {
+  white-space: nowrap;
+  font-size: xx-small;
+  color: transparent;
+  overflow: hidden;
+}
 
 // busy - all screen
 .busy-backdrop {
