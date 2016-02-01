@@ -15,6 +15,10 @@ TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart
 mkdir -p www/assets/scripts
 cp ${TARGET}/lib/assets/scripts/* www/assets/scripts/
 
+#save charted
+cp ${TARGET}/lib/assets/styles/charted* www/assets/styles/
+
+
 rm -R ${TARGET}/lib/assets
 cp -R www/assets ${TARGET}/lib
 
