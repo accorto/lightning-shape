@@ -24,9 +24,21 @@
 //  background-position: left top;
 //}
 
-// summary (footer) cell
+// summary (footer) content cell
 .cell-sum {
   color: $color-text-link;
+  border-top: 1px solid $color-text-link;
+  font-weight: bolder;
+
+  .slds-icon {
+    fill: $color-text-inverse-active;
+  }
+}
+
+// group by content cell
+.cell-by {
+  color: $color-text-link;
+  border-top: 1px dotted $color-text-link;
 
   .slds-icon {
     fill: $color-text-inverse-active;
