@@ -6172,6 +6172,23 @@ a.slds-button--inverse:focus {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+.button-footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #d8dde6;
+  background-color: transparent;
+  color: #9faab5; }
+  .button-footer:hover, .button-footer:focus {
+    background-color: #f4f6f9; }
+  .button-footer:active {
+    background-color: #eef1f6; }
+  .button-footer .slds-active, .button-footer:hover, .button-footer:focus, .button-footer:active {
+    color: #0070d2; }
+  .button-footer[disabled] {
+    background-color: white;
+    cursor: default; }
 .cpanel {
   margin: 0.5rem 0.75rem; }
 .cpanel-column {
