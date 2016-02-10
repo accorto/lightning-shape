@@ -4,22 +4,16 @@
  * License options+support:  https://lightningdart.com
  */
 
-// neutral + hint button
-.button-footer {
+// transparent button
+.#{$css-prefix}button--transparent {
   @include button;
   @include button-base;
   background-color: transparent;
-  color: $color-text-button-default-hint;
-
-  .slds-active,
-  &:hover,
-  &:focus,
-  &:active {
-    color: $color-text-button-default;
-  }
 
   &[disabled]{
     background-color: $color-background-button-default-disabled;
+    color: $color-text-button-default-hint;
     cursor: default;
   }
 }
+
