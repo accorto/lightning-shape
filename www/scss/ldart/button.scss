@@ -17,3 +17,19 @@
   }
 }
 
+// stateful not just for icon-border, also for icon-container
+.#{$css-prefix}button--icon-container.#{$css-prefix}is-selected {
+  @include button-brand;
+
+  .#{$css-prefix}button__icon {
+    fill: $color-text-button-brand;
+  }
+
+  &:hover,
+  &:focus {
+
+    .#{$css-prefix}button__icon {
+      fill: $color-text-button-brand;
+    }
+  }
+}
