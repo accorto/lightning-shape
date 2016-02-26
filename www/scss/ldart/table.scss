@@ -1,0 +1,27 @@
+/*
+ * Copyright (c) 2016 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+// data tables
+
+// Grid Table - editors
+.slds-table {
+
+  td {
+    vertical-align: top;
+  }
+
+  .slds-form-element {
+    input {
+      min-width: 130px; // date
+    }
+  }
+
+  // references
+  .slds-lookup {
+    min-width: 160px;
+  }
+
+}
