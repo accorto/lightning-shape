@@ -9,19 +9,41 @@
 // Grid Table - editors
 .slds-table {
 
-  td {
+  > tbody > tr > td {
     vertical-align: top;
   }
-
   .slds-form-element {
+    textarea {
+      min-width: 100px;
+    }
     input {
-      min-width: 130px; // date
+      min-width: 120px;
     }
   }
 
   // references
   .slds-lookup {
-    min-width: 160px;
+    min-width: 150px;
   }
+}
 
+// space for drop-downs
+.table-info-bottom {
+  margin: $spacing-large $spacing-large $spacing-x-large $spacing-large;
+  min-height: 10rem; // date=10rem
+}
+.table-info-bottom-small {
+  margin: $spacing-large $spacing-large $spacing-x-large $spacing-large;
+  min-height: 3rem;
+}
+
+// default overwritten when in table
+.slds-datepicker {
+  .day {
+    padding: 0.25rem !important;
+    box-shadow: none !important;
+    abbr {
+      font-weight: bold;
+    }
+  }
 }
