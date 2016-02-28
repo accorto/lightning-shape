@@ -27,16 +27,6 @@
   }
 }
 
-// space for drop-downs
-.table-info-bottom {
-  margin: $spacing-large $spacing-large $spacing-x-large $spacing-large;
-  min-height: 10rem; // date=10rem
-}
-.table-info-bottom-small {
-  margin: $spacing-large $spacing-large $spacing-x-large $spacing-large;
-  min-height: 3rem;
-}
-
 // default overwritten when in table
 .slds-datepicker {
   .day {
@@ -46,4 +36,38 @@
       font-weight: bold;
     }
   }
+}
+
+// space for drop-downs
+.r-table-info {
+  padding: $spacing-large $spacing-large $spacing-x-large $spacing-large;
+  min-height: 6rem; // dropdown=6rm
+  position: relative;
+  z-index: 2;
+  //background: orange;
+
+  &.small {
+    min-height: 2rem;
+  }
+  &.large {
+    min-height: 10rem; // date=10rem
+  }
+}
+
+// responsive table
+.r-table-wrap {
+  position: relative;
+}
+
+.r-table-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.r-table-foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
