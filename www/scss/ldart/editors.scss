@@ -15,6 +15,14 @@
     top: 0;
     tab-index: -1;
     color: $color-text-input-icon; // $color-text-input-disabled;
+
+    &.currency { // select
+      border: none;
+      background: transparent;
+      left: .5rem;
+      height: $line-height-button; //2.125rem;
+      color: inherit;
+    }
   }
 
   // before the field
