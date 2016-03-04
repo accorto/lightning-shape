@@ -15,9 +15,31 @@
   .slds-form-element {
     textarea {
       min-width: 100px;
+      transition: .5s;
+      &:focus {
+        min-width: 180px;
+      }
     }
     input {
       min-width: 120px;
+    }
+    .w80 {
+      min-width: 80px;
+    }
+    .w100 {
+      min-width: 100px;
+    }
+    .w140 {
+      min-width: 140px;
+    }
+    .w160 {
+      min-width: 160px;
+    }
+    .w180 {
+      min-width: 180px;
+    }
+    .w200 {
+      min-width: 200px;
     }
   }
 
