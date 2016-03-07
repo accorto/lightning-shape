@@ -7242,6 +7242,17 @@ input[type=number]::-webkit-inner-spin-button.decimal {
   .slds-section-title a:focus {
     outline: none;
     box-shadow: none; }
+@media (min-width: 30em) {
+  .slds-form--inline .slds-form-element {
+    margin-right: 0.5rem; }
+    .slds-form--inline .slds-form-element + .slds-form-element {
+      margin-top: 0; }
+  .slds-form--inline .slds-form-element,
+  .slds-form--inline .slds-form-element__label,
+  .slds-form--inline .slds-form-element__control {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0; } }
 .rotate-right {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
