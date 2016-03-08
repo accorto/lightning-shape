@@ -19,9 +19,16 @@
     &.currency { // select
       border: none;
       background: transparent;
-      left: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      left: 10px;
       height: $line-height-button; //2.125rem;
       color: inherit;
+
+      select::-ms-expand {
+        display: none;
+      }
     }
   }
 
