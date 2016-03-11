@@ -32,6 +32,7 @@
   height: 100%;
   //background: $color-background-temp-modal-tint-alt;
   z-index: $z-index-modal+200;
+  cursor: wait;
 
   &--open {
     visibility: visible;
@@ -43,6 +44,7 @@
 /// Loading container (parent)
 .loading {
   position: relative;
+  cursor: wait;
 }
 
 // https://css-tricks.com/snippets/css/a-guide-to-flexbox/
