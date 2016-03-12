@@ -6,12 +6,19 @@
 
 // Temporary fixes
 
-// mobile space restriction
+// form space restriction
 .slds-tabs--path {
-  overflow: auto;
+  overflow: auto; // otherwise forces width to be too wide
 }
 
 // Button not to wrap text
 .slds-button {
-  white-space: nowrap;
+//m  white-space: nowrap;
+}
+
+// scrolling behind modal
+body {
+  &.modal-open {
+    overflow: hidden;
+  }
 }
