@@ -6,6 +6,7 @@
 
 // Prefix, e.g. range editor
 
+/*
 .#{$css-prefix}input-has-prefix {
   position: relative;
 
@@ -57,28 +58,56 @@
     }
   }
 }
-
+*/
 
 // left inside input
-.#{$css-prefix}input__dock {
+.#{$css-prefix}input__tz {
+  line-height: $line-height-button;
   position: absolute;
   left: 0.5rem;
-  top: 25%;
   color: $color-text-input-icon; // $color-text-input-disabled;
+  tab-index: -1;
+  //z-index: 10;
 }
-.#{$css-prefix}input-has-dock {
-  padding-left: 6.25rem; // input
+.#{$css-prefix}input-has-tz {
+//  position: relative;
+  padding-left: 6.5rem; // input
 }
+
+// left inside input (select)
+.#{$css-prefix}input__cur {
+  height: $line-height-button;
+  position: absolute;
+  left: 0.5rem;
+  //z-index: 1;
+
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: inherit;
+
+  select::-ms-expand {
+    display: none;
+  }
+}
+.#{$css-prefix}input-has-cur {
+//  position: relative;
+  padding-left: 6.5rem; // input
+}
+
+
 
 
 // second right icon (clear)
 .#{$css-prefix}input-has-icon--right2 {
   .#{$css-prefix}input__icon2 {
-    right: 2.5rem;// $spacing-xx-large; = 3rem
+    right: 2.5rem; // $spacing-xx-large; = 3rem
   }
   .#{$css-prefix}input,
   .#{$css-prefix}input--bare {
-    padding-right: $spacing-xx-large; // 3 rem (3.5 would be better)
+    padding-right: 3.5rem; //
   }
 }
 
