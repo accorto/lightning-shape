@@ -28,3 +28,6 @@ rm ${TARGET}/lib/assets/styles/salesforce-lightning*
 cp www/assets/images/*.ico ${TARGET}/web
 cp LightningDartLogo*.svg ${TARGET}/web
 
+# additional targets
+TARGET=/Users/jorg/Documents/Accorto/www/accorto.com
+cp -R www/assets ${TARGET}
