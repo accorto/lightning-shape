@@ -93,3 +93,12 @@
   left: 0;
   z-index: 1;
 }
+
+// data table
+.d-table {
+  td {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
