@@ -1,0 +1,29 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+$accorto-blue: #0066B2;
+$accorto-green: #8BC53F;
+
+@import
+  "apps",
+  "busy",
+  "button",
+  "cpanel",
+  "dlist",
+  "dnd",
+  "editors",
+  "form",
+  "icons",
+  "lookup",
+  "modal",
+  "popin",
+  "table",
+  "text",
+  "statistics",
+
+  "fixes";
+
+// display:flex; align-items:center; justify-content: center; position: fixed; top:0; bottom:0; left:0; right: 0

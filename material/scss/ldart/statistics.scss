@@ -1,0 +1,46 @@
+/*
+ * Copyright (c) 2016 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+.cell-stat-right,
+.cell-stat-left {
+  //fill: $color-background-scrollbar-track; // #a8b7c7
+  fill: $color-background-scrollbar; // #e0e5ee
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='5' height='20'><rect fill='#e0e5ee' x='0' y='0' width='100%' height='100%'/></svg>");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+
+// number - right aligned
+.cell-stat-right {
+  background-position: right top;
+}
+
+// dates - left aligned (default)
+//.cell-stat-left {
+//  background-position: left top;
+//}
+
+// summary (footer) content cell
+.cell-sum {
+  color: $color-text-link;
+  border-top: 1px solid $color-text-link;
+  font-weight: bolder;
+
+  .slds-icon {
+    fill: $color-text-inverse-active;
+  }
+}
+
+// group by content cell
+.cell-by {
+  color: $color-text-link;
+  border-top: 1px dotted $color-text-link;
+
+  .slds-icon {
+    fill: $color-text-inverse-active;
+  }
+}

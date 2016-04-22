@@ -1,0 +1,43 @@
+/*
+ * Copyright (c) 2016 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+// transparent button
+.#{$css-prefix}button--transparent {
+  @include button;
+  @include button-base;
+  background-color: transparent;
+
+  &[disabled]{
+    background-color: $color-background-button-default-disabled;
+    color: $color-text-button-default-hint;
+    cursor: default;
+  }
+}
+
+// stateful not just for icon-border, also for icon-container
+.#{$css-prefix}button--icon-container.#{$css-prefix}is-selected {
+  @include button-brand;
+
+  .#{$css-prefix}button__icon {
+    fill: $color-text-button-brand;
+  }
+
+  &:hover,
+  &:focus {
+
+    .#{$css-prefix}button__icon {
+      fill: $color-text-button-brand;
+    }
+  }
+}
+
+// popup wrapper (usually button or icon)
+.pop-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: .5rem; // in case it is hidden
+}

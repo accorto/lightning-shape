@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+// Text and Icon Colors
+.text-error {
+  color: $color-text-error;
+  stroke: $color-text-error;
+}
+.text-warning {
+  color: $color-text-warning;
+  stroke: $color-text-warning;
+}
+.text-success {
+  color: $color-background-toast-success;
+  stroke: $color-background-toast-success;
+}
+
+// help
+.help-text {
+  color: $color-text-icon-default-hint;
+  stroke: $color-text-icon-default-hint;
+  margin-left: 1rem;
+  cursor: help;
+}
+.help-top-right {
+  @extend .help-text;
+  position: absolute;
+  padding: 1rem;
+  top: 0.5rem;
+  right: -.25rem;
+}
+.help-icon {
+  fill: $color-text-icon-default-hint;
+}

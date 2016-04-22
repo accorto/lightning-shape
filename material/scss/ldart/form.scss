@@ -1,0 +1,55 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+// Form Section
+
+// Text Section title - remove outline
+.slds-section-title {
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  a:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+/// inline fix form starting with small (not large)
+.#{$css-prefix}form--inline {
+
+  @include mq-small-min {
+
+    .#{$css-prefix}form-element {
+      margin-right: $spacing-x-small;
+
+      + .#{$css-prefix}form-element {
+        margin-top: 0;
+      }
+    }
+
+    .#{$css-prefix}form-element,
+    .#{$css-prefix}form-element__label,
+    .#{$css-prefix}form-element__control {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/// processes
+.proc-instance {
+}
+.proc-static {
+  background-color: aliceblue;
+  border-width: 2px;
+}
+.proc-multi-rec {
+}
+.proc-single-rec {
+}

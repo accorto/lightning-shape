@@ -1,0 +1,104 @@
+/*
+ * Copyright (c) 2016 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+// data tables
+
+// Grid Table - editors
+.slds-table {
+
+  > tbody > tr > td {
+    vertical-align: top;
+  }
+  .slds-form-element {
+    textarea {
+      min-width: 100px;
+      transition: .5s;
+      &:focus {
+        min-width: 180px;
+      }
+    }
+    input {
+      min-width: 120px;
+    }
+    .w80 {
+      min-width: 80px;
+    }
+    .w100 {
+      min-width: 100px;
+    }
+    .w140 {
+      min-width: 140px;
+    }
+    .w160 {
+      min-width: 160px;
+    }
+    .w180 {
+      min-width: 180px;
+    }
+    .w200 {
+      min-width: 200px;
+    }
+  }
+
+  // references
+  .slds-lookup {
+    min-width: 150px;
+  }
+}
+
+// default overwritten when in table
+.slds-datepicker {
+  .day {
+    padding: 0.25rem !important;
+    box-shadow: none !important;
+    abbr {
+      font-weight: bold;
+    }
+  }
+}
+
+// space for drop-downs
+.r-table-info {
+  padding: $spacing-large $spacing-large $spacing-x-large $spacing-large;
+  min-height: 6rem; // dropdown=6rm
+  position: relative;
+  z-index: 2;
+  //background: orange;
+
+  &.small {
+    min-height: 2rem;
+  }
+  &.large {
+    min-height: 10rem; // date=10rem
+  }
+}
+
+// responsive table
+.r-table-wrap {
+  position: relative;
+}
+
+.r-table-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.r-table-foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+// data table
+.d-table {
+  td {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}

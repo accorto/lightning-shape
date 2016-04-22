@@ -1,0 +1,38 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+// Modal Small
+.#{$css-prefix}modal--small .#{$css-prefix}modal__container {
+  width: 90%;
+  max-width: 580px; // 960
+  // min-width: 480px; // 640
+}
+
+// Modal Mobile
+.#{$css-prefix}modal--mobile .#{$css-prefix}modal__container {
+  width: 100%;
+  margin: 0;
+}
+
+// form button fix
+.#{$css-prefix}modal--form {
+
+  // form buttons
+  .buttons {
+    float: right;
+    .pop-wrapper {
+      margin-right: .5rem;
+      margin-left: .5rem;
+    }
+  }
+
+  // override display: inline-block
+  .#{$css-prefix}modal__header .#{$css-prefix}button {
+    &.slds-hide {
+      display: none;
+    }
+  }
+}

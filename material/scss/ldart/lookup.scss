@@ -1,0 +1,57 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+/* LightningDart extension Lookup Auto visible */
+
+.#{$css-prefix}lookup {
+
+  .#{$css-prefix}lookup__menu.auto-visible {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+    // overwrite slds-lookup__menu
+    margin-top: initial;
+    padding: initial;
+  }
+
+  &:hover,
+  &:focus {
+    .#{$css-prefix}lookup__menu.auto-visible {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity $duration-quickly linear, visibility $duration-quickly linear;
+    }
+  }
+}
+
+.slds-pill__container {
+  &[aria-disabled="true"] {
+    background-color: $color-background-input-disabled;
+    border-color: #a8b7c7; // This is throwing an error as if it doesn't exist $color-border-input-disabled;
+    cursor: not-allowed;
+    user-select: none;
+    box-shadow: none;
+    .slds-pill {
+      background: transparent;
+    }
+  }
+
+  &[aria-readonly="true"] {
+    border-color: $color-border-input-disabled;
+    background-color: $color-background-stencil;
+    cursor: not-allowed;
+    box-shadow: none;
+    .slds-pill {
+      background: transparent;
+    }
+  }
+
+}
+
+// list item description (small within lookup__item or dropdown__item)
+.list-description {
+  margin-left: .5rem;
+}

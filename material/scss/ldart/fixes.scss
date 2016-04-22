@@ -1,0 +1,24 @@
+/*
+ * Copyright (c) 2015 Accorto, Inc. All Rights Reserved
+ * License: GPLv3  http://www.gnu.org/licenses/gpl-3.0.txt
+ * License options+support:  https://lightningdart.com
+ */
+
+// Temporary fixes
+
+// form space restriction
+.slds-tabs--path {
+  overflow: auto; // otherwise forces width to be too wide
+}
+
+// Button not to wrap text
+.slds-button {
+  white-space: nowrap;
+}
+
+// scrolling behind modal
+body {
+  &.modal-open {
+    overflow: hidden;
+  }
+}
