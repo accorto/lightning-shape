@@ -27,7 +27,7 @@ gulp.task('sass', function () {
         .pipe(stripCssComments())
         .pipe(removeEmptyLines())
         .pipe(autoprefixer())
-        .pipe(replace('/assets/fonts/', '../fonts/'))
+        //.pipe(replace('/assets/fonts/', '../fonts/'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('www/assets/styles'));
 });
