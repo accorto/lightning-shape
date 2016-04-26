@@ -19,9 +19,8 @@ set -x
 #├── @salesforce-ux/icons@3.3.0
 
 # save ldart
-#cp -R scss/ldart material/sccs
-#cp scss/lightningdart.scss material/sccs
-
+cp -R www/scss/ldart material/scss
+cp www/scss/lightningdart.scss material/scss
 
 
 SLDS=node_modules/@salesforce-ux/design-system
