@@ -24,8 +24,6 @@ cp www/scss/lightningdart.scss material/scss
 
 
 SLDS=node_modules/@salesforce-ux/design-system
-TOKENS=node_modules/@salesforce-ux/design-tokens
-
 
 ## Copy to target - assets
 rm -R www/assets
@@ -35,9 +33,10 @@ cp -R ${SLDS}/assets www
 rm -R www/scss
 cp -R ${SLDS}/scss www
 
-cp -R ${TOKENS}/dist www/scss
-mv www/scss/dist www/scss/tokens
-sed -i "" "s|@salesforce-ux/design-tokens/dist|tokens|g" www/scss/_design-tokens.scss
+#TOKENS=node_modules/@salesforce-ux/design-tokens
+#cp -R ${TOKENS}/dist www/scss
+#mv www/scss/dist www/scss/tokens
+#sed -i "" "s|@salesforce-ux/design-tokens/dist|tokens|g" www/scss/_design-tokens.scss
 
 
 ## delete not used icon files
