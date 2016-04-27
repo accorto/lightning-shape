@@ -11,12 +11,14 @@ gulp sass
 # copy to target folder - sorry hardcoded
 TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart
 
-# save scripts
+# save/update scripts
 mkdir -p www/assets/scripts
 cp ${TARGET}/lib/assets/scripts/* www/assets/scripts/
+cp ${TARGET}/lib/assets/scripts/* material/scripts/
 
-#save charted
+# save/update charted
 cp ${TARGET}/lib/assets/styles/charted* www/assets/styles/
+cp ${TARGET}/lib/assets/styles/charted* material/styles/
 
 
 rm -R ${TARGET}/lib/assets
