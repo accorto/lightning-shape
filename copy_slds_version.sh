@@ -40,20 +40,20 @@ cp -R ${SLDS}/scss www
 
 
 ## delete not used icon files
-cd www/assets/icons
-rm -R action
-rm -R custom
-rm -R doctype
-rm -R standard
-rm -R utility
+#cd www/assets/icons
+#rm -R action
+#rm -R custom
+#rm -R doctype
+#rm -R standard
+#rm -R utility
 
-rm action-sprite/symbols.html
-rm custom-sprite/symbols.html
-rm doctype-sprite/symbols.html
-rm standard-sprite/symbols.html
-rm utility-sprite/symbols.html
-rm README
-cd -
+#rm action-sprite/symbols.html
+#rm custom-sprite/symbols.html
+#rm doctype-sprite/symbols.html
+#rm standard-sprite/symbols.html
+#rm utility-sprite/symbols.html
+#rm README
+#cd -
 
 
 # copy material

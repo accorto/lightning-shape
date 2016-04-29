@@ -1,14 +1,14 @@
 node_modules
+out
 
-# don't replicate https://www.getslds.com/resources
-slds
+.idea/workspace.xml
+
 
 # https://github.com/jonathantneal/svg4everybody
 /svg4everybody/svg4everybody-1.0.0
 
 /www/assets/styles/charted_theme.css*
 
+*.css.map
 
-.idea/workspace.xml
 test0.html
-out

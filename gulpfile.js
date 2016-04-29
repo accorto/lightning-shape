@@ -10,8 +10,6 @@ var autoprefixer = require('gulp-autoprefixer');
 // https://www.npmjs.com/package/gulp-strip-css-comments/
 var stripCssComments = require('gulp-strip-css-comments');
 var removeEmptyLines = require('gulp-remove-empty-lines');
-// https://www.npmjs.com/package/gulp-replace
-var replace = require('gulp-replace');
 
 // https://www.npmjs.com/package/gulp-scss-lint/
 var scsslint = require('gulp-scss-lint');
@@ -21,13 +19,12 @@ gulp.task('sass', function () {
     // https://github.com/sass/node-sass
     return gulp.src('www/scss/lightningdart.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({sourcemap: true,
-            outputStyle: 'nested'}) // nested, expanded, compact, compressed
-            .on('error', sass.logError))
-        .pipe(stripCssComments())
-        .pipe(removeEmptyLines())
-        .pipe(autoprefixer())
-        //.pipe(replace('/assets/fonts/', '../fonts/'))
+            .pipe(sass({
+                outputStyle: 'nested'}) // nested, expanded, compact, compressed
+                .on('error', sass.logError))
+            .pipe(stripCssComments())
+            .pipe(removeEmptyLines())
+            .pipe(autoprefixer())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('www/assets/styles'));
 });
