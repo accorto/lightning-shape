@@ -102,3 +102,24 @@
     overflow-wrap: break-word;
   }
 }
+
+// matrix header
+// http://jimmybonney.com/articles/column_header_rotation_css/
+th.m-rotate {
+  height: 100px;
+  white-space: nowrap;
+  vertical-align: middle;
+  // text-overflow: ellipsis;
+
+  > div {
+    transform:
+            translate(15px, 30px)
+            rotate(315deg); // 360-45
+    width: 30px; // column width
+
+    > span {
+      border-bottom: $border-width-thin solid $color-border;
+      padding: 5px 0;
+    }
+  }
+}
