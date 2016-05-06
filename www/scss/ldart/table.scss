@@ -106,20 +106,24 @@
 // matrix header
 // http://jimmybonney.com/articles/column_header_rotation_css/
 th.m-rotate {
-  height: 100px;
+  height: 135px;
   white-space: nowrap;
   vertical-align: middle;
   // text-overflow: ellipsis;
 
   > div {
     transform:
-            translate(15px, 30px)
+            translate(15px, 45px)
             rotate(315deg); // 360-45
     width: 30px; // column width
 
     > span {
       border-bottom: $border-width-thin solid $color-border;
-      padding: 5px 0;
+      padding: 10px 0;
     }
   }
+}
+// matrix column selected
+td.m-selected {
+  background-color: $color-background-row-selected !important;
 }

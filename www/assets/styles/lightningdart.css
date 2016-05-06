@@ -7333,19 +7333,19 @@ input[type=number]::-webkit-inner-spin-button.decimal {
   word-wrap: break-word;
   overflow-wrap: break-word; }
 th.m-rotate {
-  height: 100px;
+  height: 135px;
   white-space: nowrap;
   vertical-align: middle; }
   th.m-rotate > div {
-    -webkit-transform: translate(15px, 30px) rotate(315deg);
-        -ms-transform: translate(15px, 30px) rotate(315deg);
-            transform: translate(15px, 30px) rotate(315deg);
+    -webkit-transform: translate(15px, 45px) rotate(315deg);
+        -ms-transform: translate(15px, 45px) rotate(315deg);
+            transform: translate(15px, 45px) rotate(315deg);
     width: 30px; }
     th.m-rotate > div > span {
       border-bottom: 1px solid #d8dde6;
-      padding: 5px 0; }
-.m-last-col {
-  width: 10px; }
+      padding: 10px 0; }
+td.m-selected {
+  background-color: #f0f8fc !important; }
 .text-error {
   color: #c23934;
   stroke: #c23934; }
