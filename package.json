@@ -1,19 +1,19 @@
 {
   "name": "lightning-design",
-  "version": "1.0.3",
+  "version": "2.0.2",
   "description": "LightningDart SCSS",
   "private": true,
   "author": "Accorto <lightningart@accorto.com>",
-  "license": "GPLv3",
+  "license": "LGPL-3.0",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "@salesforce-ux/design-system": ">=1.0.0",
-    "@salesforce-ux/design-tokens": ">=2.0.5",
-    "@salesforce-ux/icons": ">=3.4.0",
-    "express": ">=4.12.3",
-    "node-sass": ">=3.4.2"
+    "@salesforce-ux/design-system": ">=2.0.2",
+    "@salesforce-ux/design-tokens": ">=3.1.2",
+    "@salesforce-ux/icons": ">=4.0.0",
+    "express": ">=4.14.0",
+    "node-sass": ">=3.8.0"
   },
   "devDependencies": {
     "gulp": ">=3.9.1",
@@ -21,8 +21,8 @@
     "gulp-plumber": ">=1.0.1",
     "gulp-remove-empty-lines": ">=0.0.2",
     "gulp-replace": ">=0.5.4",
-    "gulp-sass": ">=2.2.0",
-    "gulp-scss-lint": ">=0.3.9",
+    "gulp-sass": ">=2.3.2",
+    "gulp-scss-lint": ">=0.4.0",
     "gulp-sourcemaps": ">=1.6.0",
     "gulp-strip-css-comments": ">=1.2.0"
   }
