@@ -1,4 +1,4 @@
-// Lightning Design System 1.0.3
+// Lightning Design System 2.0.2
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -28,19 +28,22 @@
 
   // Icons
   'icons/flavors/base/index',
-  'icons/flavors/colors/index',
+  'icons/flavors/icon-colors/index',
+  'icons/flavors/background-colors/index',
   'icons/flavors/sizes/index',
 
   // Card
   'cards/flavors/base/index',
-  'cards/flavors/empty/index',
 
   // Forms
   'forms/flavors/input/index',
   'forms/flavors/textarea/index',
   'forms/flavors/radio/index',
+  'forms/flavors/radio-group-alternate/index',
   'forms/flavors/checkbox/index',
+  'forms/flavors/checkbox-toggle/index',
   'forms/flavors/select/index',
+  'forms/flavors/checkbox-alternate/index',
   'forms/flavors/multi-select/index',
   'forms/flavors/edit-dialog-for-touch/index',
   'forms/flavors/form-element/index',
@@ -49,27 +52,15 @@
   'forms/flavors/inline-form/index',
   'forms/flavors/compound-form/index',
 
-  // Grid
-  'grid-system/flavors/automatic-sizing/index',
-  'grid-system/flavors/horizontal-alignment-center/index',
-  'grid-system/flavors/horizontal-alignment-space/index',
-  'grid-system/flavors/horizontal-alignment-spread/index',
-  'grid-system/flavors/horizontal-alignment-end/index',
-  'grid-system/flavors/vertical-alignment-center/index',
-  'grid-system/flavors/vertical-alignment-end/index',
-  'grid-system/flavors/vertical-alignment-item/index',
-  'grid-system/flavors/vertical-stretch/index',
-  'grid-system/flavors/alignment-item-bump/index',
-  'grid-system/flavors/container-frame/index',
-  'grid-system/flavors/containers/index',
-  'grid-system/flavors/overflow/index',
-
   // Tooltip
   'tooltips/flavors/base/index',
 
   // Page Headers
   'page-headers/flavors/base/index',
   'page-headers/flavors/record-home/index',
+
+  // Panels
+  'panels/flavors/detail/index',
 
   // Popovers
   'popovers/flavors/base/index',
@@ -105,7 +96,6 @@
 
   // Pills
   'pills/flavors/base/index',
-  'pills/flavors/portrait/index',
 
   // Process
   'process/flavors/wizard/index',
@@ -122,12 +112,13 @@
   'tiles/flavors/base/index',
   'tiles/flavors/board/index',
 
-  // Tree
-  'trees/flavors/base/index',
-
   // Tabs
   'tabs/flavors/default/index',
   'tabs/flavors/scoped/index',
+
+  // Navigation
+  'navigation/flavors/vertical/index',
+  'navigation/flavors/context-bar/index',
 
   // Notifications -- Toasts & Alerts
   'notifications/index',
@@ -136,22 +127,18 @@
   'notifications/flavors/modal-toast/index',
 
   // Lookup
-  'lookups/flavors/base/index',
-  'lookups/flavors/single-select/index',
-  'lookups/flavors/multi-select/index',
-  'lookups/flavors/multi-scope/index',
-  'lookups/flavors/advanced-modal/index',
-
-  // Objects
-  'media-objects/flavors/base/index',
-  'media-objects/flavors/responsive/index',
+  'lookups/index',
 
   // Images
-  'images/flavors/avatars/index',
+  'images/flavors/avatar/index',
 
   // Badges
   'badges/flavors/base/index',
 
   // Tables
-  'data-tables/flavors/base/index',
-  'data-tables/flavors/responsive/index';
+  'data-tables/index',
+  'data-tables/flavors/responsive/index',
+
+  // Tree (Order matters)
+  'trees/flavors/base/index',
+  'trees/flavors/grid/index';

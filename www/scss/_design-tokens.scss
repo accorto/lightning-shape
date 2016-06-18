@@ -1,4 +1,4 @@
-// Lightning Design System 1.0.3
+// Lightning Design System 2.0.2
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -12,8 +12,10 @@
 // scss-lint:disable ImportPath
 
 $font-size-small: 0.75rem !default;
-$font-size-medium: 0.875rem !default;
-$font-size-large: 1.125rem !default;
+$font-size-medium: 0.8125rem !default;
+$font-size-large: 1rem !default;
+$font-size-x-large: 1.25rem !default;
+$font-size-xx-large: 1.75rem !default;
 $line-height-text: 1.5 !default;
 $width-stage-left-collapsed: 4rem !default;
 $width-stage-left-expanded: 15rem !default;
@@ -26,7 +28,7 @@ $color-background-path-current-hover: rgb(0, 95, 178) !default;
 $color-background-path-incomplete: rgb(224, 229, 238) !default;
 $color-background-path-incomplete-hover: rgb(216, 221, 230) !default;
 $color-background-path-lost: rgb(194, 57, 52) !default;
-$color-background-guidance: rgb(0, 0, 0) !default;
+$color-background-guidance: rgb(250, 250, 251) !default;
 $color-border-path-divider: rgb(255, 255, 255) !default;
 $line-height-salespath: 1.5rem !default;
 $duration-slide: 0.25s !default;
@@ -48,6 +50,7 @@ $square-record-anchor-pic: 3rem !default;
 $square-tappable: 2.75rem !default;
 $flex-master-panel: 7 !default;
 $square-tooltip: 1.25rem !default;
+$square-tooltip-nubbin: 1rem !default;
 $flex-detail-panel: 3 !default;
 $elevation-3-below: -3 !default;
 $elevation-0: 0 !default;
@@ -93,6 +96,7 @@ $color-background-notification-badge: rgb(194, 57, 52) !default;
 $color-background-notification-badge-hover: rgb(0, 95, 178) !default;
 $color-background-notification-badge-focus: rgb(0, 95, 178) !default;
 $color-background-notification-badge-active: rgb(0, 57, 107) !default;
+$color-background-notification: rgb(255, 255, 255) !default;
 $color-background-notification-new: rgb(240, 248, 252) !default;
 $color-background-org-switcher-arrow: rgb(6, 28, 63) !default;
 $color-background-payload: rgb(244, 246, 249) !default;
@@ -108,6 +112,19 @@ $color-background-scrollbar-track: rgb(168, 183, 199) !default;
 $color-brand: rgb(21, 137, 238) !default;
 $color-brand-dark: rgb(0, 112, 210) !default;
 $color-brand-darker: rgb(0, 95, 178) !default;
+$color-background-toggle: rgb(159, 170, 181) !default;
+$color-background-toggle-disabled: rgb(159, 170, 181) !default;
+$color-background-toggle-hover: rgb(126, 140, 153) !default;
+$color-background-toggle-active: rgb(0, 112, 210) !default;
+$color-background-toggle-active-hover: rgb(0, 0, 0) !default;
+$color-background-context-bar: rgb(22, 50, 92) !default;
+$color-background-context-bar-item-hover: rgba(0, 0, 0, 0.2) !default;
+$color-background-context-bar-item-active: rgba(0, 0, 0, 0.4) !default;
+$color-background-context-bar-inverse-item-hover: rgba(255, 255, 255, 0.2) !default;
+$color-background-context-bar-inverse-item-active: rgba(255, 255, 255, 0.4) !default;
+$color-background-context-bar-shadow: rgba(0, 0, 0, 0.25) !default;
+$color-background-context-bar-action-highlight: rgba(255, 255, 255, 0.2) !default;
+$color-background-page-header: rgb(247, 249, 251) !default;
 $border-width-thin: 1px !default;
 $border-width-thick: 2px !default;
 $border-radius-small: .125rem !default;
@@ -144,6 +161,11 @@ $color-border-selection-hover: rgb(21, 137, 238) !default;
 $color-border-selection-active: rgb(244, 246, 249) !default;
 $color-border-canvas-element-selection: rgb(94, 180, 255) !default;
 $color-border-canvas-element-selection-hover: rgb(0, 95, 178) !default;
+$color-border-context-bar-divider: rgba(255, 255, 255, 0.2) !default;
+$color-border-context-bar-item: rgba(0, 0, 0, 0.2) !default;
+$color-border-context-bar-inverse-item: rgba(255, 255, 255, 0.2) !default;
+$color-border-icon-inverse-hint: rgba(255, 255, 255, 0.5) !default;
+$color-border-icon-inverse-hint-hover: rgba(255, 255, 255, 0.75) !default;
 $color-text-button-brand: rgb(255, 255, 255) !default;
 $color-text-button-brand-hover: rgb(255, 255, 255) !default;
 $color-text-button-brand-active: rgb(255, 255, 255) !default;
@@ -157,6 +179,7 @@ $color-text-button-inverse: rgb(224, 229, 238) !default;
 $color-text-button-inverse-disabled: rgba(255, 255, 255, 0.15) !default;
 $color-text-icon-default: rgb(84, 105, 141) !default;
 $color-text-icon-default-hint: rgb(159, 170, 181) !default;
+$color-text-icon-inverse-hint: rgba(255, 255, 255, 0.5) !default;
 $color-text-icon-default-hint-borderless: rgb(224, 229, 238) !default;
 $color-text-icon-default-hover: rgb(0, 112, 210) !default;
 $color-text-icon-default-active: rgb(0, 57, 107) !default;
@@ -165,6 +188,7 @@ $color-text-icon-inverse: rgb(255, 255, 255) !default;
 $color-text-icon-inverse-hover: rgb(255, 255, 255) !default;
 $color-text-icon-inverse-active: rgb(255, 255, 255) !default;
 $color-text-icon-inverse-disabled: rgba(255, 255, 255, 0.15) !default;
+$color-text-icon-inverse-hint-hover: rgba(255, 255, 255, 0.75) !default;
 $color-background-button-brand: rgb(0, 112, 210) !default;
 $color-background-button-brand-active: rgb(0, 57, 107) !default;
 $color-background-button-brand-hover: rgb(0, 95, 178) !default;
@@ -195,15 +219,17 @@ $font-weight-bold: 700 !default;
 $font-size-x-small: 0.625rem !default;
 $font-size-small: 0.875rem !default;
 $font-size-medium: 1rem !default;
+$font-size-medium-a: 0.875rem !default;
 $font-size-large: 1.25rem !default;
 $font-size-x-large: 1.5rem !default;
 $font-size-xx-large: 2rem !default;
 $line-height-heading: 1.25 !default;
 $line-height-text: 1.375 !default;
 $line-height-reset: 1 !default;
-$line-height-tab: 3rem !default;
-$line-height-button: 2.125rem !default;
+$line-height-tab: 2.5rem !default;
+$line-height-button: 1.875rem !default;
 $line-height-button-small: 1.75rem !default;
+$line-height-toggle: 1.3rem !default;
 $color-background-input: rgb(255, 255, 255) !default;
 $color-background-input-active: rgb(255, 255, 255) !default;
 $color-background-input-checkbox: rgb(255, 255, 255) !default;
@@ -237,9 +263,10 @@ $color-background-toast-success: rgb(4, 132, 75) !default;
 $color-background-toast-error: rgb(194, 57, 52) !default;
 $color-background-warning: rgb(255, 183, 93) !default;
 $opacity-5: 0.5 !default;
+$opacity-8: 0.8 !default;
 $shadow-action-overflow-footer: 0 -2px 4px #F4F6F9 !default;
 $shadow-overlay: 0 -2px 4px rgba(0,0,0,.07) !default;
-$shadow-drag: 0px 2px 4px 0px rgba(0,0,0,.4) !default;
+$shadow-drag: 0px 2px 4px 0px rgba(0,0,0,.40) !default;
 $shadow-button: 0px 1px 1px 0px rgba(0,0,0,.05) !default;
 $shadow-drop-down: 0px 2px 3px 0px rgba(0,0,0,.16) !default;
 $shadow-header: 0 2px 4px rgba(0,0,0,.07) !default;
@@ -262,12 +289,18 @@ $square-icon-medium: 2.375rem !default;
 $square-icon-medium-boundary: 2rem !default;
 $square-icon-medium-boundary-alt: 2.25rem !default;
 $square-icon-medium-content: 1rem !default;
+$square-icon-medium-content-alt: 0.875rem !default;
 $square-icon-small: 1rem !default;
 $square-icon-small-boundary: 1.5rem !default;
 $square-icon-small-content: .75rem !default;
 $square-icon-x-small-boundary: 1.25rem !default;
+$square-icon-xx-small-boundary: 1rem !default;
 $square-icon-x-small-content: .5rem !default;
 $square-icon-large: 3.125rem !default;
+$square-toggle-slider: 1.25rem !default;
+$width-toggle: 3.375rem !default;
+$height-toggle: 1.5rem !default;
+$height-context-bar: 2.25rem !default;
 $spacing-none: 0 !default;
 $spacing-xxx-small: 0.125rem !default;
 $spacing-xx-small: 0.25rem !default;
@@ -276,6 +309,7 @@ $spacing-small: 0.75rem !default;
 $spacing-medium: 1rem !default;
 $spacing-large: 1.5rem !default;
 $spacing-x-large: 2rem !default;
+$spacing-xx-large: 3rem !default;
 $color-text-action-label: rgb(84, 105, 141) !default;
 $color-text-action-label-active: rgb(22, 50, 92) !default;
 $color-text-brand: rgb(21, 137, 238) !default;
@@ -313,6 +347,11 @@ $color-text-toast: rgb(224, 229, 238) !default;
 $color-text-warning: rgb(255, 183, 93) !default;
 $color-text-weak: rgb(84, 105, 141) !default;
 $color-text-icon-brand: rgb(0, 112, 210) !default;
+$color-text-icon-utility: rgb(159, 170, 181) !default;
+$color-text-toggle-disabled: rgb(216, 221, 230) !default;
+$color-text-context-bar: rgb(255, 255, 255) !default;
+$color-text-context-bar-inverse: rgb(255, 255, 255) !default;
+$color-text-context-bar-action-trigger: rgba(255, 255, 255, 0.4) !default;
 $duration-instantly: 0s !default;
 $duration-immediately: 0.05s !default;
 $duration-quickly: 0.1s !default;
@@ -372,6 +411,7 @@ $force-base-map: (
   "color-background-notification-badge-hover": (rgb(0, 95, 178)),
   "color-background-notification-badge-focus": (rgb(0, 95, 178)),
   "color-background-notification-badge-active": (rgb(0, 57, 107)),
+  "color-background-notification": (rgb(255, 255, 255)),
   "color-background-notification-new": (rgb(240, 248, 252)),
   "color-background-org-switcher-arrow": (rgb(6, 28, 63)),
   "color-background-payload": (rgb(244, 246, 249)),
@@ -387,6 +427,19 @@ $force-base-map: (
   "color-brand": (rgb(21, 137, 238)),
   "color-brand-dark": (rgb(0, 112, 210)),
   "color-brand-darker": (rgb(0, 95, 178)),
+  "color-background-toggle": (rgb(159, 170, 181)),
+  "color-background-toggle-disabled": (rgb(159, 170, 181)),
+  "color-background-toggle-hover": (rgb(126, 140, 153)),
+  "color-background-toggle-active": (rgb(0, 112, 210)),
+  "color-background-toggle-active-hover": (rgb(0, 0, 0)),
+  "color-background-context-bar": (rgb(22, 50, 92)),
+  "color-background-context-bar-item-hover": (rgba(0, 0, 0, 0.2)),
+  "color-background-context-bar-item-active": (rgba(0, 0, 0, 0.4)),
+  "color-background-context-bar-inverse-item-hover": (rgba(255, 255, 255, 0.2)),
+  "color-background-context-bar-inverse-item-active": (rgba(255, 255, 255, 0.4)),
+  "color-background-context-bar-shadow": (rgba(0, 0, 0, 0.25)),
+  "color-background-context-bar-action-highlight": (rgba(255, 255, 255, 0.2)),
+  "color-background-page-header": (rgb(247, 249, 251)),
   "border-width-thin": (1px),
   "border-width-thick": (2px),
   "border-radius-small": (.125rem),
@@ -423,6 +476,11 @@ $force-base-map: (
   "color-border-selection-active": (rgb(244, 246, 249)),
   "color-border-canvas-element-selection": (rgb(94, 180, 255)),
   "color-border-canvas-element-selection-hover": (rgb(0, 95, 178)),
+  "color-border-context-bar-divider": (rgba(255, 255, 255, 0.2)),
+  "color-border-context-bar-item": (rgba(0, 0, 0, 0.2)),
+  "color-border-context-bar-inverse-item": (rgba(255, 255, 255, 0.2)),
+  "color-border-icon-inverse-hint": (rgba(255, 255, 255, 0.5)),
+  "color-border-icon-inverse-hint-hover": (rgba(255, 255, 255, 0.75)),
   "color-text-button-brand": (rgb(255, 255, 255)),
   "color-text-button-brand-hover": (rgb(255, 255, 255)),
   "color-text-button-brand-active": (rgb(255, 255, 255)),
@@ -436,6 +494,7 @@ $force-base-map: (
   "color-text-button-inverse-disabled": (rgba(255, 255, 255, 0.15)),
   "color-text-icon-default": (rgb(84, 105, 141)),
   "color-text-icon-default-hint": (rgb(159, 170, 181)),
+  "color-text-icon-inverse-hint": (rgba(255, 255, 255, 0.5)),
   "color-text-icon-default-hint-borderless": (rgb(224, 229, 238)),
   "color-text-icon-default-hover": (rgb(0, 112, 210)),
   "color-text-icon-default-active": (rgb(0, 57, 107)),
@@ -444,6 +503,7 @@ $force-base-map: (
   "color-text-icon-inverse-hover": (rgb(255, 255, 255)),
   "color-text-icon-inverse-active": (rgb(255, 255, 255)),
   "color-text-icon-inverse-disabled": (rgba(255, 255, 255, 0.15)),
+  "color-text-icon-inverse-hint-hover": (rgba(255, 255, 255, 0.75)),
   "color-background-button-brand": (rgb(0, 112, 210)),
   "color-background-button-brand-active": (rgb(0, 57, 107)),
   "color-background-button-brand-hover": (rgb(0, 95, 178)),
@@ -474,15 +534,17 @@ $force-base-map: (
   "font-size-x-small": (0.625rem),
   "font-size-small": (0.875rem),
   "font-size-medium": (1rem),
+  "font-size-medium-a": (0.875rem),
   "font-size-large": (1.25rem),
   "font-size-x-large": (1.5rem),
   "font-size-xx-large": (2rem),
   "line-height-heading": (1.25),
   "line-height-text": (1.375),
   "line-height-reset": (1),
-  "line-height-tab": (3rem),
-  "line-height-button": (2.125rem),
+  "line-height-tab": (2.5rem),
+  "line-height-button": (1.875rem),
   "line-height-button-small": (1.75rem),
+  "line-height-toggle": (1.3rem),
   "color-background-input": (rgb(255, 255, 255)),
   "color-background-input-active": (rgb(255, 255, 255)),
   "color-background-input-checkbox": (rgb(255, 255, 255)),
@@ -516,9 +578,10 @@ $force-base-map: (
   "color-background-toast-error": (rgb(194, 57, 52)),
   "color-background-warning": (rgb(255, 183, 93)),
   "opacity-5": (0.5),
+  "opacity-8": (0.8),
   "shadow-action-overflow-footer": (0 -2px 4px #F4F6F9),
   "shadow-overlay": (0 -2px 4px rgba(0,0,0,.07)),
-  "shadow-drag": (0px 2px 4px 0px rgba(0,0,0,.4)),
+  "shadow-drag": (0px 2px 4px 0px rgba(0,0,0,.40)),
   "shadow-button": (0px 1px 1px 0px rgba(0,0,0,.05)),
   "shadow-drop-down": (0px 2px 3px 0px rgba(0,0,0,.16)),
   "shadow-header": (0 2px 4px rgba(0,0,0,.07)),
@@ -541,12 +604,18 @@ $force-base-map: (
   "square-icon-medium-boundary": (2rem),
   "square-icon-medium-boundary-alt": (2.25rem),
   "square-icon-medium-content": (1rem),
+  "square-icon-medium-content-alt": (0.875rem),
   "square-icon-small": (1rem),
   "square-icon-small-boundary": (1.5rem),
   "square-icon-small-content": (.75rem),
   "square-icon-x-small-boundary": (1.25rem),
+  "square-icon-xx-small-boundary": (1rem),
   "square-icon-x-small-content": (.5rem),
   "square-icon-large": (3.125rem),
+  "square-toggle-slider": (1.25rem),
+  "width-toggle": (3.375rem),
+  "height-toggle": (1.5rem),
+  "height-context-bar": (2.25rem),
   "spacing-none": (0),
   "spacing-xxx-small": (0.125rem),
   "spacing-xx-small": (0.25rem),
@@ -555,6 +624,7 @@ $force-base-map: (
   "spacing-medium": (1rem),
   "spacing-large": (1.5rem),
   "spacing-x-large": (2rem),
+  "spacing-xx-large": (3rem),
   "color-text-action-label": (rgb(84, 105, 141)),
   "color-text-action-label-active": (rgb(22, 50, 92)),
   "color-text-brand": (rgb(21, 137, 238)),
@@ -592,6 +662,11 @@ $force-base-map: (
   "color-text-warning": (rgb(255, 183, 93)),
   "color-text-weak": (rgb(84, 105, 141)),
   "color-text-icon-brand": (rgb(0, 112, 210)),
+  "color-text-icon-utility": (rgb(159, 170, 181)),
+  "color-text-toggle-disabled": (rgb(216, 221, 230)),
+  "color-text-context-bar": (rgb(255, 255, 255)),
+  "color-text-context-bar-inverse": (rgb(255, 255, 255)),
+  "color-text-context-bar-action-trigger": (rgba(255, 255, 255, 0.4)),
   "duration-instantly": (0s),
   "duration-immediately": (0.05s),
   "duration-quickly": (0.1s),
@@ -614,7 +689,7 @@ $action-upload: rgb(84, 105, 141) !default;
 $action-change-record-type: rgb(84, 105, 141) !default;
 $action-check: rgb(84, 105, 141) !default;
 $action-download: rgb(84, 105, 141) !default;
-$action-edit-relationship: rgb(84, 105, 141) !default;
+$action-edit-relationship: rgb(29, 204, 191) !default;
 $action-freeze-user: rgb(84, 105, 141) !default;
 $action-manage-perm-sets: rgb(84, 105, 141) !default;
 $action-password-unlock: rgb(84, 105, 141) !default;
@@ -797,6 +872,8 @@ $action-flow: rgb(0, 121, 188) !default;
 $action-announcement: rgb(254, 143, 96) !default;
 $action-record: rgb(125, 195, 125) !default;
 $action-log-event: rgb(108, 161, 233) !default;
+$action-add-relationship: rgb(98, 183, 237) !default;
+$action-remove-relationship: rgb(239, 110, 100) !default;
 $custom-1: rgb(255, 123, 132) !default;
 $custom-2: rgb(207, 208, 92) !default;
 $custom-3: rgb(236, 180, 108) !default;
@@ -996,6 +1073,7 @@ $today: rgb(239, 126, 173) !default;
 $topic: rgb(86, 170, 223) !default;
 $unmatched: rgb(98, 183, 237) !default;
 $marketing-actions: rgb(107, 189, 110) !default;
+$relationship: rgb(60, 151, 221) !default;
 $folder: rgb(139, 154, 227) !default;
 $bg-actions-map: (
   "action-change-owner": (rgb(84, 105, 141)),
@@ -1005,7 +1083,7 @@ $bg-actions-map: (
   "action-change-record-type": (rgb(84, 105, 141)),
   "action-check": (rgb(84, 105, 141)),
   "action-download": (rgb(84, 105, 141)),
-  "action-edit-relationship": (rgb(84, 105, 141)),
+  "action-edit-relationship": (rgb(29, 204, 191)),
   "action-freeze-user": (rgb(84, 105, 141)),
   "action-manage-perm-sets": (rgb(84, 105, 141)),
   "action-password-unlock": (rgb(84, 105, 141)),
@@ -1187,7 +1265,9 @@ $bg-actions-map: (
   "action-flow": (rgb(0, 121, 188)),
   "action-announcement": (rgb(254, 143, 96)),
   "action-record": (rgb(125, 195, 125)),
-  "action-log-event": (rgb(108, 161, 233))
+  "action-log-event": (rgb(108, 161, 233)),
+  "action-add-relationship": (rgb(98, 183, 237)),
+  "action-remove-relationship": (rgb(239, 110, 100))
 );
 $bg-custom-map: (
   "custom-1": (rgb(255, 123, 132)),
@@ -1391,35 +1471,20 @@ $bg-standard-map: (
   "topic": (rgb(86, 170, 223)),
   "unmatched": (rgb(98, 183, 237)),
   "marketing-actions": (rgb(107, 189, 110)),
+  "relationship": (rgb(60, 151, 221)),
   "folder": (rgb(139, 154, 227))
 );
 
 
 // TODO: Add to Design Tokens
-$spacing-xx-large: 3rem !default;
-$square-tooltip-nubbin: $spacing-medium !default;
+
+// MQ
 $mq-x-small: 320px !default;
 $mq-small: 480px !default;
 $mq-medium: 768px !default;
 $mq-large: 1024px !default;
 $mq-x-large: 1280px !default;
 
-// Tokens with PR request - remove when merged
-$spacing-none: 0 !default; // Needed for the margin/padding zero
-$color-background-path-complete: $color-background-success;
-$color-background-path-complete-hover: $color-background-toast-success;
-$color-background-path-current: #0076de;
-$color-background-path-current-hover: rgb(0, 95, 178);
-$color-background-path-incomplete: $color-background-shade;
-$color-background-path-incomplete-hover: $color-background-input-checkbox-disabled;
-$color-background-path-lost: $color-background-notification-badge;
-$color-background-guidance: #fafafb;
-$color-border-path-divider: $color-border-input-checkbox-selected-checkmark;
-$color-border-inverse: $color-background-inverse;
-$height-sales-path: 2rem !default;
-$line-height-salespath: 1.5rem !default;
-
-$force-base-map: map-merge($force-base-map, (
-  'spacing-xx-large': $spacing-xx-large,
-  'spacing-none': $spacing-none
-));
+$color-context-bar-shadow: #000 !default;
+$height-input: 1.875rem !default;
+$height-pill: 1.625rem !default;

@@ -1,4 +1,4 @@
-// Lightning Design System 1.0.3
+// Lightning Design System 2.0.2
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -62,7 +62,7 @@
       }
       bottom: $border-width-thick solid $color-border;
     }
-    padding: $spacing-large $spacing-medium;
+    padding: $spacing-medium;
     text-align: center;
 
     + .#{$css-prefix}modal__menu {
@@ -73,9 +73,31 @@
     }
   }
 
+  &__header--empty {
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  &__header--empty + .#{$css-prefix}modal__content {
+      border: {
+      top: {
+        right-radius: $border-radius-medium;
+        left-radius: $border-radius-medium;
+      }
+    }
+  }
+
   &__content {
     overflow: hidden {
       y: auto;
+    }
+
+    &:last-child {
+      border-bottom: {
+        right-radius: $border-radius-medium;
+        left-radius: $border-radius-medium;
+      }
+      box-shadow: $shadow-drop-down;
     }
   }
 
@@ -110,12 +132,16 @@
     &--directional .#{$css-prefix}button:first-child {
       float: left;
     }
+
+    .#{$css-prefix}button + .#{$css-prefix}button {
+      margin-left: $spacing-x-small;
+    }
   }
 
   &__close {
     @include square($square-icon-large-boundary);
     position: absolute;
-    top: -$square-icon-large-boundary;
+    top: ($square-icon-large-boundary * -1);
     right: ((($square-icon-large-boundary - $square-icon-large-content) / 2) * -1);
   }
 }

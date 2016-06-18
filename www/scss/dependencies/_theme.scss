@@ -1,4 +1,4 @@
-// Lightning Design System 1.0.3
+// Lightning Design System 2.0.2
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -153,7 +153,7 @@
 
 
 // Striped Gradient
-@mixin gradient-striped($stripe-color: rgba(#000, 0.035), $angle: 45deg, $color: null) {
+@mixin gradient-striped($stripe-color: rgba(#000, 0.025), $angle: 45deg, $color: null) {
 
   @if $color != null {
     background-color: $color;

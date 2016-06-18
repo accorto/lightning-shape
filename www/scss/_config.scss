@@ -1,4 +1,4 @@
-// Lightning Design System 1.0.3
+// Lightning Design System 2.0.2
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -16,7 +16,7 @@
 ///
 /// @type String
 /// @access private
-$app-version: '1.0.2';
+$app-version: '2.0.2';
 
 /// Debug mode (uncomment to activate)
 /// Turn on to output deprecation warnings during development
@@ -24,11 +24,6 @@ $app-version: '1.0.2';
 ///
 /// @type Boolean
 // $app-debug: true;
-
-/// Icon Path
-///
-/// @type String
-$static-icon-path: '../icons' !default;
 
 /// Image Path
 ///
@@ -39,6 +34,15 @@ $static-image-path: '../images' !default;
 ///
 /// @type String
 $static-font-path: '../fonts/webfonts' !default;
+
+/// Load webfonts
+///
+/// The Design System loads Salesforce webfonts using @font-face rules.
+/// Apps that already load webfonts or load webfonts using JavaScript
+/// should switch this setting off.
+///
+/// @type Boolean
+$slds-load-webfonts: true !default;
 
 /// Grid
 ///

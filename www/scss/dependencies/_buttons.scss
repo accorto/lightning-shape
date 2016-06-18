@@ -1,4 +1,4 @@
-// Lightning Design System 1.0.3
+// Lightning Design System 2.0.2
 @mixin button {
   padding: {
     left: $spacing-medium;
@@ -43,7 +43,8 @@
   }
 }
 
-@mixin button-destructive { // @TODO - update when new tokens hit the repo
+@mixin button-destructive {
+  // @TODO - update when new tokens hit the repo
   background-color: #c23934; //$color-background-destructive;
   border: $border-width-thin solid #c23934; //$color-border-destructive;
   color: $color-text-inverse;

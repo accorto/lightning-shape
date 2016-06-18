@@ -1,4 +1,4 @@
-// Lightning Design System 1.0.3
+// Lightning Design System 2.0.2
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -28,10 +28,13 @@
 }
 
 
-@mixin text-heading--label {
+@mixin text-heading--label-normal {
   font-size: $font-size-small;
   line-height: $line-height-heading;
-  text-transform: uppercase;
-  letter-spacing: 0.0625em;
   color: $color-text-weak;
+}
+
+@mixin text-heading--label {
+  @include text-heading--label-normal;
+  text-transform: uppercase;
 }

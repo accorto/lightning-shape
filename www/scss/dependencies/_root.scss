@@ -1,7 +1,9 @@
-// Lightning Design System 1.0.3
+// Lightning Design System 2.0.2
 @mixin root($root: html, $body: body) {
   #{$root} {
-    font: 100%/#{$line-height-text} $font-family;
+    font-family: $font-family;
+    font-size: 100%;
+    line-height: $line-height-text;
     background: $color-background-alt;
     color: $color-text-default;
     -webkit: {
