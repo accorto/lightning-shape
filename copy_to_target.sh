@@ -4,6 +4,7 @@ set -x
 
 # recreate assets
 gulp sass
+gulp min
 
 # cp LightningDartLogo.svg www/assets/images
 # convertImg.sh

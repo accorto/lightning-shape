@@ -9,6 +9,8 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 // https://www.npmjs.com/package/gulp-strip-css-comments/
 var stripCssComments = require('gulp-strip-css-comments');
+var cleanCSS = require('gulp-clean-css');
+var rename = require("gulp-rename");
 var removeEmptyLines = require('gulp-remove-empty-lines');
 
 // https://www.npmjs.com/package/gulp-scss-lint/
@@ -18,7 +20,7 @@ var scsslint = require('gulp-scss-lint');
 gulp.task('sass', function () {
     // https://github.com/sass/node-sass
     return gulp.src('www/scss/lightningdart.scss')
-        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.init({identityMap: true, debug: true}))
             .pipe(sass({
                 outputStyle: 'nested'}) // nested, expanded, compact, compressed
                 .on('error', sass.logError))
@@ -26,6 +28,16 @@ gulp.task('sass', function () {
             .pipe(removeEmptyLines())
             .pipe(autoprefixer())
         .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('www/assets/styles'));
+});
+
+gulp.task('min', function() {
+    return gulp.src(['www/assets/styles/lightningdart.css', 'www/assets/styles/charted_theme.css'])
+        .pipe(cleanCSS({debug: true}, function(details) {
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('www/assets/styles'));
 });
 
