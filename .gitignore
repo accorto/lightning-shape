@@ -10,5 +10,6 @@ out
 /www/assets/styles/charted_theme.css*
 
 *.css.map
+*.min.css
 
 test0.html

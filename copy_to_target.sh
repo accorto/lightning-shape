@@ -3,8 +3,7 @@ set -e
 set -x
 
 # recreate assets
-gulp sass
-gulp min
+gulp default
 
 # cp LightningDartLogo.svg www/assets/images
 # convertImg.sh

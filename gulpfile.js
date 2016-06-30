@@ -17,7 +17,7 @@ var removeEmptyLines = require('gulp-remove-empty-lines');
 var scsslint = require('gulp-scss-lint');
 
 /// Create css+map semi-minimized (no comments, empty lines, ..)
-gulp.task('sass', function () {
+gulp.task('sass-l', function () {
     // https://github.com/sass/node-sass
     return gulp.src('www/scss/lightningdart.scss')
         .pipe(sourcemaps.init({identityMap: true, debug: true}))
@@ -27,6 +27,20 @@ gulp.task('sass', function () {
             .pipe(stripCssComments())
             .pipe(removeEmptyLines())
             .pipe(autoprefixer())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('www/assets/styles'));
+});
+
+gulp.task('sass-c', function () {
+    // https://github.com/sass/node-sass
+    return gulp.src('www/assets/styles/charted_theme.scss')
+        .pipe(sourcemaps.init({identityMap: true, debug: true}))
+        .pipe(sass({
+            outputStyle: 'nested'}) // nested, expanded, compact, compressed
+            .on('error', sass.logError))
+        .pipe(stripCssComments())
+        .pipe(removeEmptyLines())
+        .pipe(autoprefixer())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('www/assets/styles'));
 });
@@ -42,7 +56,4 @@ gulp.task('min', function() {
 });
 
 /// Check Style
-gulp.task('default', function() {
-    gulp.src('styles.scss')
-        .pipe(scsslint());
-});
+gulp.task('default', ['sass-l', 'sass-c', 'min']);
