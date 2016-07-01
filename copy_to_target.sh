@@ -2,16 +2,13 @@
 set -e
 set -x
 
-# recreate assets
-gulp default
-
 # cp LightningDartLogo.svg www/assets/images
 # convertImg.sh
 
 # copy to target folder - sorry hardcoded
 TARGET=/Users/jorg/Documents/BizPlatform/lightning/lightning-dart
 
-# save/update scripts
+# save/update scripts TARGET is master!
 mkdir -p www/assets/scripts
 cp ${TARGET}/lib/assets/scripts/* www/assets/scripts/
 cp ${TARGET}/lib/assets/scripts/* material/scripts/
@@ -20,6 +17,8 @@ cp ${TARGET}/lib/assets/scripts/* material/scripts/
 cp ${TARGET}/lib/assets/styles/charted* www/assets/styles/
 cp ${TARGET}/lib/assets/styles/charted* material/styles/
 
+# recreate assets
+gulp default
 
 rm -R ${TARGET}/lib/assets
 cp -R www/assets ${TARGET}/lib
