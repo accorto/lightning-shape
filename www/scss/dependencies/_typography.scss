@@ -1,4 +1,4 @@
-// Lightning Design System 2.0.2
+// Lightning Design System 2.1.3
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -34,7 +34,15 @@
   color: $color-text-weak;
 }
 
+@mixin text-heading--label-bold {
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  color: $color-text-weak;
+}
+
 @mixin text-heading--label {
   @include text-heading--label-normal;
   text-transform: uppercase;
+  letter-spacing: 0.0625rem;
 }

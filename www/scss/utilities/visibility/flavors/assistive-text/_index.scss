@@ -1,4 +1,4 @@
-// Lightning Design System 2.0.2
+// Lightning Design System 2.1.3
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -20,4 +20,17 @@
   height: 1px !important;
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
+}
+
+.#{$css-prefix}assistive-text--focus {
+  // scss-lint:disable ImportantRule
+  &:focus {
+    margin: inherit !important;
+    border: inherit !important;
+    padding: inherit !important;
+    width: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    clip: auto !important;
+  }
 }

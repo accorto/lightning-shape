@@ -1,4 +1,4 @@
-// Lightning Design System 2.0.2
+// Lightning Design System 2.1.3
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -13,29 +13,35 @@
 @import
 
   // Activity Timeline
-  'activity-timeline/flavors/base/index',
+  'activity-timeline/index',
+
+  // Badges
+  'badges/index',
 
   // Breadcrumbs
-  'breadcrumbs/flavors/base/index',
+  'breadcrumbs/index',
 
   // Button Groups
-  'button-groups/flavors/base/index',
+  'button-groups/index',
 
   // Button
   'buttons/flavors/base/index',
   'buttons/flavors/stateful/index',
-  'buttons/flavors/icon/index',
+
+  // Button Icon
+  'button-icons/flavors/base/index',
 
   // Icons
-  'icons/flavors/base/index',
+  'icons/index',
   'icons/flavors/icon-colors/index',
-  'icons/flavors/background-colors/index',
   'icons/flavors/sizes/index',
 
   // Card
-  'cards/flavors/base/index',
+  'cards/index',
+  'cards/flavors/base-compact/index',
 
   // Forms
+  'forms/index',
   'forms/flavors/input/index',
   'forms/flavors/textarea/index',
   'forms/flavors/radio/index',
@@ -45,63 +51,85 @@
   'forms/flavors/select/index',
   'forms/flavors/checkbox-alternate/index',
   'forms/flavors/multi-select/index',
-  'forms/flavors/edit-dialog-for-touch/index',
-  'forms/flavors/form-element/index',
   'forms/flavors/horizontal-form/index',
   'forms/flavors/stacked-form/index',
   'forms/flavors/inline-form/index',
   'forms/flavors/compound-form/index',
+  'forms/flavors/docked-form-footer/index',
 
-  // Tooltip
-  'tooltips/flavors/base/index',
+  // File selector
+  'file-selector/index',
 
   // Page Headers
-  'page-headers/flavors/base/index',
+  'page-headers/index',
   'page-headers/flavors/record-home/index',
+  'page-headers/flavors/record-home-vertical/index',
+  'page-headers/flavors/object-home/index',
 
   // Panels
-  'panels/flavors/detail/index',
+  'panels/index',
+  'panels/flavors/filtering/index',
 
   // Popovers
-  'popovers/flavors/base/index',
-  'popovers/flavors/tooltips/index',
+  'popovers/index',
   'popovers/flavors/panels/index',
   'popovers/flavors/nubbins/index',
 
+  // Tooltips
+  'tooltips/index',
+
   // Menus
-  'menus/flavors/dropdown/index',
-  'menus/flavors/picklist/index',
+  'menus/index',
   'menus/flavors/action-overflow/index',
-  'menus/flavors/action-overflow-for-touch/index',
+
+  // Picklist
+  'picklist/index',
 
   // Datepicker
-  'datepickers/flavors/base/index',
+  'datepickers/index',
   'datepickers/flavors/time/index',
 
   // Docked Composer
-  'docked-composer/flavors/base/index',
+  'docked-composer/index',
   'docked-composer/flavors/email/index',
   'docked-composer/flavors/task/index',
 
+  // Docked Utility Bar
+  'docked-utility-bar/flavors/utility-bar/index',
+  'docked-utility-bar/flavors/utility-panel/index',
+
+  // Global Header
+  'global-header/flavors/base/index',
+
+  // Global Navigation
+  'global-navigation/index',
+
   // Publishers
+  'publishers/index',
   'publishers/flavors/discussion-feed/index',
   'publishers/flavors/comment/index',
 
   // Discussion Feed
-  'feeds/flavors/discussion-feed/index',
+  'feeds/flavors/feed-list/index',
   'feeds/flavors/comment/index',
+  'feeds/flavors/post/index',
+  'feeds/flavors/post-with-attachments/index',
 
   // Modal
-  'modals/flavors/base/index',
+  'modals/index',
+
+  // App Launcher
+  'app-launcher/index',
 
   // Pills
-  'pills/flavors/base/index',
+  'pills/index',
 
   // Process
   'process/flavors/wizard/index',
   'process/flavors/sales-path-coach/index',
 
   // Spinners
+  'spinners/index',
   'spinners/flavors/small/index',
   'spinners/flavors/medium/index',
   'spinners/flavors/large/index',
@@ -109,16 +137,16 @@
   'spinners/flavors/inverse-small/index',
 
   // Title
-  'tiles/flavors/base/index',
+  'tiles/index',
   'tiles/flavors/board/index',
 
   // Tabs
   'tabs/flavors/default/index',
   'tabs/flavors/scoped/index',
+  'tabs/flavors/scrolling/index',
 
   // Navigation
   'navigation/flavors/vertical/index',
-  'navigation/flavors/context-bar/index',
 
   // Notifications -- Toasts & Alerts
   'notifications/index',
@@ -131,13 +159,13 @@
 
   // Images
   'images/flavors/avatar/index',
-
-  // Badges
-  'badges/flavors/base/index',
+  'images/flavors/figure/index',
 
   // Tables
   'data-tables/index',
   'data-tables/flavors/responsive/index',
+  'data-tables/flavors/inline-edit/index',
+  'data-tables/flavors/fixed-header/index',
 
   // Tree (Order matters)
   'trees/flavors/base/index',

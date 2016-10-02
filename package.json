@@ -1,6 +1,6 @@
 {
-  "name": "lightning-design",
-  "version": "2.0.2",
+  "name": "lightning-shape",
+  "version": "2.1.3",
   "description": "LightningDart SCSS",
   "private": true,
   "author": "Accorto <lightningart@accorto.com>",

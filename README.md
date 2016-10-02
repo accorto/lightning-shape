@@ -14,13 +14,17 @@ https://www.lightningdesignsystem.com
 ## Build (via node + gulp)
 
 	npm install
-	gulp sass
+	gulp
 
 ### design system npm module
 
 	npm install @salesforce-ux/design-system --save
 	
+### update
 	
+    npm outdated
+    npm update
+	./copy_slds_version.sh
 	
 
 ## Direct Use

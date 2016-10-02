@@ -1,4 +1,4 @@
-// Lightning Design System 2.0.2
+// Lightning Design System 2.1.3
 // Copyright (c) 2015, salesforce.com, inc. All rights reserved.
 
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -17,25 +17,42 @@
 
   &__title {
     display: flex;
+    align-items: center;
     font-size: $font-size-large;
   }
 
   &__title-action {
+    display: flex;
+    align-items: center;
+    background: $color-background;
     cursor: pointer;
+    width: 100%;
+    text-align: left;
+    color: currentColor;
+    font-size: inherit;
+    padding: 0 $spacing-x-small;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $color-background-button-default-active;
+      color: inherit;
+    }
   }
 
   &__content {
     visibility: hidden;
     opacity: 0;
+    height: 0;
   }
 
-  .#{$css-prefix}button__icon {
+  &__title-action-icon {
     transform: rotate(-90deg);
   }
 
   &.#{$css-prefix}is-open {
 
-    .#{$css-prefix}button__icon {
+    .#{$css-prefix}section__title-action-icon {
       transform: rotate(0deg);
       transform-origin: 45%;
     }
@@ -44,6 +61,7 @@
       padding-top: $spacing-small;
       visibility: visible;
       opacity: 1;
+      height: auto;
     }
   }
 }

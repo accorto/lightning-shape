@@ -1,4 +1,4 @@
-/*! Lightning Design System 2.0.2 */
+/*! Lightning Design System 2.1.3 */
 /*!
  * Copyright (c) 2015, salesforce.com, inc. All rights reserved.
  *
@@ -27,9 +27,11 @@
   @import
 
     // Resets
+    'vendor/normalize',
     'core/core-ltng',
 
     // Framework
+    'touch/index',
     'components/index',
     'utilities/index',
 
