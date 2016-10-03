@@ -23,7 +23,7 @@ https://www.lightningdesignsystem.com
 ### update
 	
     npm outdated
-    npm update
+    npm update --save
 	./copy_slds_version.sh
 	
 

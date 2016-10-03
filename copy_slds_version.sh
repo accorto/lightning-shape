@@ -10,7 +10,7 @@ set -x
 # npm install @salesforce-ux/icons --save
 
 # npm outdated
-# npm update
+# npm update --save
 # npm install
 # npm ls --depth 0
 
